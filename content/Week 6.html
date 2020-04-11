@@ -1,259 +1,160 @@
-<h1>About</h1>
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>Week</h1>
-<h3>week 2</h3>
-<h4>將python 3.7.3更新至3.8.2</h4>
-<p>1.進入<a href="https://www.python.org/downloads/release/python-382/">https://www.python.org/downloads/release/python-382/</a> </p>
-<p>2.往下滑到最底，下載<a href="https://www.python.org/ftp/python/3.8.2/python-3.8.2-amd64.exe">Windows x86-64 executable installer</a></p>
-<p>3.下載完成後開啟，選擇Customize installation選項</p>
-<p><img alt="../_images/win_installer.png" height="258" src="https://docs.python.org/zh-tw/3/_images/win_installer.png" width="406"/></p>
-<p>(請不要在意版本號)</p>
-<p>4.不要勾選pip選項，接著按下next</p>
-<p>5.選擇路徑將python安裝至可攜式系統中的Y槽下</p>
-<p>6.接著開啟start_mdecourse.bat批次檔</p>
-<p>7.將<span>start_mdecourse.bat批次檔中的py373改為安裝python 3.8.2版本的資料夾</span></p>
-<p><span>(我的資料夾名字是py382)</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">@echo off
-set Disk=y
-subst %Disk%: "data"
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
 
-%Disk%:
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
 
-set HomePath=%Disk%:\home_mdecourse
-set HomeDrive=%Disk%:\home_mdecourse
-set Home=%Disk%:\home_mdecourse
-set USERPROFILE=%Disk%:\home_mdecourse
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
 
-REM 將系統 Python 程式的 io 設為 utf-8
-set PYTHONIOENCODING="utf-8"
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
 
-set PYTHONPATH=%Disk%:\\DLLs;%Disk%:\py382\Lib;%Disk%:\py382\Lib\site-packages;
-set PYTHONHOME=%Disk%:\py382
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>s40723112 協同產品設計實習</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">s40723112 協同產品設計實習</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Develop.html'>Develop</a><li class='has-children'><a href='Week.html'>Week</a><ul class='dropdown'><li><a href='week 2.html'>week 2</a><li><a href='week 4.html'>week 4</a><li><a href='Week 6.html'>Week 6</a></li></ul><li><a href='小組直播討論.html'>小組直播討論</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
 
-set path_python=%Disk%:\py382;%Disk%:\py382\Scripts;
-set path_msys2=%Disk%:\msys64\mingw64\bin;
-REM coreutils is for compiling fossil scm
-set path_coreutils=%Disk%:\coreutils-5.3.0\bin;%Disk%:\depends22_x64;
-set path_tcc=%Disk%:\tcc;
-set path_cmake=%Disk%:\cmake-3.10.1-win64-x64\bin;
-set path_nodejs=Disk%:\nodejs;%Disk%:\nodejs\appdata\roaming\npm;
-set path_git=%Disk%:\portablegit\bin;
-set path_xming=%Disk%:\Xming;
-set path_latex=%%Disk%:\Pandoc;%Disk%:\TinyTeX\bin\win32;
-
-path=%Disk%:;%path_python%;%path_msys2%;%path_tcc%;%path_git%;%path_cmake%;%path_coreutils%;
-
-start /MIN cmd.exe
-start /MIN cmd.exe
-start /MIN cmd.exe
-start /MIN cmd.exe
-
-start /MIN %Disk%:\wscite415\wscite\SciTE.exe
-start /MIN %Disk%:\wscite415\wscite\SciTE.exe
-
-Exit</pre>
-<p>8.執行stop.bat批次檔後重新啟動start_mdecourse(為了讓檔案重新讀取)<br/><br/></p>
-<p>9.輸入get-pip.py，開始安裝pip工具</p>
-<p>10.安裝完成後，使用 pip install <em>XXX</em>(<span>packages名字</span>)，安裝以下<span>packages:</span></p>
-<p><span>1.<strong>Flask</strong><br/>2.<strong>Markdown</strong><br/>3.<strong>lxml</strong><br/>4.<strong>bs4</strong><br/>5.<strong>flask_cors</strong><br/>6.<strong>pelican</strong><br/>7.<strong>leo</strong></span></p>
-<p><span>EX.:要安裝Flask就輸入 <span style="color: #ff0000;">pip install Flask</span> ，以此類推<br/><br/></span></p><h2>week 4</h2>
-<h4>無法執行launchleo.py</h4>
-<p>當更新python為3.8.2版本並且要執行launchleo.py發現無法像之前一樣順利開啟。</p>
-<p>解決方法:</p>
-<p>1.開啟start.bat</p>
-<p>2.進入SciTE程式編輯器，點選options</p>
-<p>3.點選open python properties</p>
-<p><img alt="" height="971" src="/images/未命名154.jpg" width="561"/></p>
-<p>4.使用Ctrl+F  尋找<span style="color: #ff0000;"> py373 </span></p>
-<p><span style="color: #000000;">5.將py373更改為可攜裝置中的python3.8.2的資料夾名稱</span></p>
-<p><span style="color: #000000;">範例:</span></p>
-<p><span style="color: #000000;">我的python3.8.2資料夾名稱為py382</span></p>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"># Define SciTE settings for Python files.
-
-file.patterns.py=*.py;*.pyw;*.pyx;*.pxd;*.pxi
-file.patterns.scons=SConstruct;SConscript
-
-*source.patterns.python=$(file.patterns.py);
-
-shbang.python=py
-
-filter.python=Python (py pyw)|$(file.patterns.py)|
-
-*filter.python=$(filter.python)
-
-lexer.$(file.patterns.py)=python
-lexer.$(file.patterns.scons)=python
-
-*language.python=Pytho&amp;n|py||
-
-keywordclass.python2=and as assert break class continue def del elif \
-else except exec finally for from global if import in is lambda not \
-or pass print raise return try while with yield
-
-keywordclass.python3=False None True and as assert break class continue \
-def del elif else except finally for from global if import in is lambda \
-nonlocal not or pass raise return try while with yield
-
-keywordclass.python=$(keywordclass.python2)
-
-# Extra keywords for cython
-keywordclass.cython=cdef cimport cpdef
-
-keywords.$(file.patterns.py)=$(keywordclass.python) $(keywordclass.cython)
-keywords.$(file.patterns.scons)=$(keywordclass.python)
-
-# If you uncomment the 3 lines below,
-# and put some words after "keywordclass2.python=",
-# those words will be styled by style.python.14
-
-#keywordclass2.python=
-#keywords2.$(file.patterns.py)=$(keywordclass2.python)
-#keywords2.$(file.patterns.scons)=$(keywordclass2.python)
-
-# Use 2 sets of substyles to highlight standard library modules and
-# imports from the future.
-# Additional identifier sets can be added by incrementing the  next
-# line's value and adding extra definitions similar to below.
-substyles.python.11=2
-
-substylewords.11.1.$(file.patterns.py)=\
-__main__ _dummy_thread _thread abc aifc argparse \
-array ast asynchat asyncio asyncore atexit audioop \
-base64 bdb binascii binhex bisect builtins bz2 \
-calendar cgi cgitb chunk cmath cmd code codecs \
-codeop collections colorsys compileall concurrent \
-configparser contextlib copy copyreg crypt csv \
-ctypes curses datetime dbm decimal difflib dis \
-distutils dummy_threading email ensurepip enum \
-errno faulthandler fcntl filecmp fileinput fnmatch \
-formatter fpectl fractions ftplib functools gc getopt \
-getpass gettext glob grp gzip hashlib heapq hmac \
-html http http imaplib imghdr importlib inspect io \
-ipaddress itertools json keyword linecache locale \
-logging lzma macpath mailbox mailcap marshal math \
-mimetypes mmap modulefinder msilib msvcrt \
-multiprocessing netrc nis nntplib numbers operator \
-os os ossaudiodev parser pathlib pdb pickle \
-pickletools pipes pkgutil platform plistlib poplib posix \
-pprint pty pwd py_compile pyclbr queue quopri \
-random re readline reprlib resource rlcompleter runpy \
-sched select selectors shelve shlex shutil signal site \
-smtpd smtplib sndhdr socket socketserver spwd \
-sqlite3 ssl stat statistics string stringprep struct \
-subprocess sunau symbol symtable sys sysconfig \
-syslog tabnanny tarfile telnetlib tempfile termios \
-textwrap threading time timeit tkinter token \
-tokenize trace traceback tracemalloc tty turtle \
-types unicodedata unittest urllib uu uuid venv warnings \
-wave weakref webbrowser winreg winsound wsgiref \
-xdrlib xml xmlrpc zipfile zipimport zlib
-style.python.11.1=fore:#DD9900
-
-substylewords.11.2.$(file.patterns.py)=__future__ \
-with_statement unicode_literals print_function
-style.python.11.2=fore:#EE00AA,italics
-
-#~ statement.indent.$(file.patterns.py)=10 :
-statement.indent.$(file.patterns.py)=5 class def elif else except finally \
-for if try while with
-
-statement.lookback.$(file.patterns.py)=0
-block.start.$(file.patterns.py)=
-block.end.$(file.patterns.py)=
-
-view.indentation.examine.*.py=2
-
-tab.timmy.whinge.level=1
-
-#fold.quotes.python=1
-
-comment.block.python=#~
-
-indent.python.colon=1
-
-# Python styles
-# White space
-style.python.0=fore:#808080
-# Comment
-style.python.1=fore:#007F00,$(font.comment)
-# Number
-style.python.2=fore:#007F7F
-# String
-style.python.3=fore:#7F007F,$(font.monospace)
-# Single quoted string
-style.python.4=fore:#7F007F,$(font.monospace)
-# Keyword
-style.python.5=fore:#00007F,bold
-# Triple quotes
-style.python.6=fore:#7F0000
-# Triple double quotes
-style.python.7=fore:#7F0000
-# Class name definition
-style.python.8=fore:#0000FF,bold
-# Function or method name definition
-style.python.9=fore:#007F7F,bold
-# Operators
-style.python.10=bold
-# Identifiers
-style.python.11=
-# Comment-blocks
-style.python.12=fore:#7F7F7F
-# End of line where string is not closed
-style.python.13=fore:#000000,$(font.monospace),back:#E0C0E0,eolfilled
-# Highlighted identifiers
-style.python.14=fore:#407090
-# Decorators
-style.python.15=fore:#805000
-# F-String
-style.python.16=fore:#7F007F,$(font.monospace)
-# Single quoted f-string
-style.python.17=fore:#7F007F,$(font.monospace)
-# Triple quoted f-string
-style.python.18=fore:#7F0000
-# Triple double quoted f-string
-style.python.19=fore:#7F0000
-# Matched Operators
-style.python.34=fore:#0000FF,bold
-style.python.35=fore:#FF0000,bold
-# Braces are only matched in operator style
-braces.python.style=10
-
-if PLAT_WIN
-	command.go.*.py=y:\py382\pythonw -u "$(FileNameExt)"
-	command.go.subsystem.*.py=1
-	command.go.*.pyw=pythonw -u "$(FileNameExt)"
-	command.go.subsystem.*.pyw=1
-	command.build.SConscript=scons.bat --up .
-	command.build.SConstruct=scons.bat .
-
-if PLAT_GTK
-	command.go.*.py=y:\py382\python -u "$(FileNameExt)"
-	command.build.SConscript=scons --up .
-	command.build.SConstruct=scons .
-
-if PLAT_MAC
-	command.go.*.py=python -u "$(FileNameExt)"
-	command.build.SConscript=scons --up .
-	command.build.SConstruct=scons .
-
-command.name.1.$(file.patterns.py)=Syntax Check
-command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r'$(FilePath)')"
-</pre>
-<p></p>
-<p>將launchleo.py檔案放入SciTE編輯器就能夠順利開啟leo Editor</p><h2>Week 6</h2>
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">week 4 << <a href='week 4.html'>Previous</a> <a href='小組直播討論.html'>Next</a> >> 小組直播討論<br /><h1>Week 6</h1>
 <p><strong>翻譯<a href="https://drive.google.com/file/d/13THamnfayiRT4Wa9KzmjXQSP4ZW2jIej/view?usp=sharing">MechanicalDesignProcess.pdf</a> 第二章節 Building the Design後半部(P27~P33)</strong></p>
 <p><em>Footnote: (Statistical note) Some designers would make a case for some statistical probability, less than 100%, that all (4) tolerances would go in one direction, and we would not (likely) have a total of 0.025 inch. Some conservative designers would assume that all tolerance will go in the “wrong” direction, and thus，design is a “worst case.” I’ll generally disregard the “statistical” approach to tolerances for now, but it could be valuable in design situations where space is extremely constrained. See Sect. 4.8 for a discussion of:</em></p>
 <ul>
@@ -274,8 +175,8 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <li><em> Growth of the Objects (during operation): This could be the result of thermal expansion.</em></li>
 </ol>
 <p style="text-align: left;">3.物體的膨脹（在操作過程中）：這可能是熱膨脹的結果。</p>
-<p><span>4.Overall (outside) size constraints: Internal clearance distance will be affected by the overall size. That is, with a given overall size, the distance between objects will have some particular limit. The distance between objects will be a function on the size   tolerances of the objects and the tolerances on the Object locations. If the overall size is not constrained (rare instance), Object size and clearances between Objects will determine the overall size.</span></p>
-<p><span>4.</span><em>整體（外部）尺寸限制：內部間隙距離將受到整體尺寸的影響。也就是說，對於給定的整體大小，物體之間的距離將有一些特定的限制。物體之間的距離將取決於物體的尺寸公差和物體位置的公差。如果總體尺寸不受限制（稀少例子），則物體尺寸和物體間隙之間的大小將決定整體大小。</em></p>
+<p><span>4<em>.Overall (outside) size constraints: Internal clearance distance will be affected by the overall size. That is, with a given overall size, the distance between objects will have some particular limit. The distance between objects will be a function on the size   tolerances of the objects and the tolerances on the Object locations. If the overall size is not constrained (rare instance), Object size and clearances between Objects will determine the overall size.</em></span></p>
+<p><em>4</em>.整體（外部）尺寸限制：內部間隙距離將受到整體尺寸的影響。也就是說，對於給定的整體大小，物體之間的距離將有一些特定的限制。物體之間的距離將取決於物體的尺寸公差和物體位置的公差。如果總體尺寸不受限制（稀少例子），則物體尺寸和物體間隙之間的大小將決定整體大小。</p>
 <p><em><strong>2.4.2 Object Arrangement</strong></em></p>
 <p><em><strong>2.4.2物體排列</strong></em></p>
 <p><em>The designer usually works to minimize the overall dimensions of the enclosure by a “productive” arrangement of all of the Objects needed to fit within the enclosure. </em></p>
@@ -399,7 +300,7 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <li>外殼的整體尺寸或形狀</li>
 <li>外殼材料成本</li>
 </ul>
-<p><img alt="" height="845" src="/images/註解 2020-04-11 171014.jpg" width="580"/></p>
+<p><img alt="" height="845" src="./../images/註解 2020-04-11 171014.jpg" width="580"/></p>
 <p><em>We can easily envision (at least) five different ways to locate Brick A and Brick B relative to each other, producing very different enclosures. Of course, there are more than five different ways, but I’ve chosen the standard “Cartesian” arrangement of bricks in which they are parallel or aligned to each other. Let’s look at these five different layouts and comment a bit about why one might have some advantages (over the other layouts). A constant one inch is assumed between Brick A and Brick B, and that same one inch clearance is assumed between a brick and a wall (side, top, or bottom). </em></p>
 <p>我們可以輕鬆地設想（至少）五種不同的方式來相對於磚塊<span>A</span>和磚塊<span>B</span>定位，從而產生截然不同的外殼。 當然，有超過五種不同的方式，但是我選擇了標準的“笛卡爾”磚排列，其中磚彼此平行或對齊。 讓我們看一下這五個不同的佈局，並評論一下為什麼一個佈局可能比其他佈局更具優勢。 磚塊<span>A</span>和磚塊<span>B</span>之間假定一個恆定的<span>1</span>英寸，磚塊和牆壁（側面，頂部或底部）之間假定一個相同的<span>1</span>英寸間隙。</p>
 <ul>
@@ -446,7 +347,7 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p><span> </span><strong>在佈局之間進行選擇可能會有基本的美學原理。 </strong><strong>也就是說，可以選擇佈局<span>1</span></strong><strong>，因為它被認為“更直接”（更“直覺”），並且有可能佈局<span>3</span></strong><strong>被認為更“有趣”。 </strong><strong>因此，佈局的選擇可能取決於市場決定，即客戶會發現<span>2.4</span></strong><strong>最佳對象放置特定的外殼形狀更令人愉悅（並因此提高了產品銷量）。</strong></p>
 <p><strong><span> </span></strong><em>How about optimization (minimization) of the surface area of the enclosure – which layouts results in the minimum surface area? Again, the enclosure surrounds both bricks on their sides, top, and bottom.</em></p>
 <p><span> </span>如何優化（最小化）外殼的表面積<span>-</span>哪種佈局導致最小的表面積？ 同樣，外殼在其側面，頂部和底部都圍繞著這兩個磚塊。</p>
-<p><img alt="" height="216" src="/images/ewrwersd.jpg" width="474"/></p>
+<p><img alt="" height="216" src="./../images/ewrwersd.jpg" width="474"/></p>
 <p></p>
 <p><span><em>Some Conclusions to Object Arrangemen</em>t</span></p>
 <p>關於物體排列的一些結論</p>
@@ -493,8 +394,46 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p><em>We started by looking at our starting point and defining the boundaries of the design – what do we start with and what is the “outer edge” of the design. We have to define what the product is that the customer will need.</em></p>
 <p>首先，我們著眼於起點並定義設計的邊界<span>-</span>我們從什麼開始，什麼是設計的“外緣”。 我們必須定義客戶所需的產品。我們看到了設計從修訂版<span>1</span>到修訂版<span>X</span>的過程，其中<span>X</span>是提供我們認為是客戶所需的設計。</p>
 <p><em>Finally, we took a look at seeing how the individual objects that need to be in the design can be optimally placed to solve customer needs. There are trade-offs to be considered, and we must be aware of how we determine the best choices between these trade-offs.</em></p>
-<p>最後，我們看了看如何最佳放置設計中需要解決的單個物體來滿足客戶需求。 需要權衡取捨，我們必須意識到我們如何決定這些權衡之間的最佳選擇。</p><h1>小組直播討論</h1>
-<p>week3</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c06esX1zO90" width="560"></iframe></p>
-<p>week4</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/lObYwRDd4Ro" width="560"></iframe></p>
+<p>最後，我們看了看如何最佳放置設計中需要解決的單個物體來滿足客戶需求。 需要權衡取捨，我們必須意識到我們如何決定這些權衡之間的最佳選擇。</p><br />week 4 << <a href='week 4.html'>Previous</a> <a href='小組直播討論.html'>Next</a> >> 小組直播討論</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
