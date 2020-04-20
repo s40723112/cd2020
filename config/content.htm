@@ -1,4 +1,7 @@
 <h1>About</h1>
+<p>個人倉儲:<a href="https://github.com/s40723112/cd2020">https://github.com/s40723112/cd2020</a></p>
+<p><span>cd2020ag3小組倉儲 : </span><a href="https://github.com/s40723110/cd2020ag3">https://github.com/s40723110/cd2020ag3</a></p>
+<p><span>cd2020ag3小組網頁 :<span> </span><a href="https://s40723110.github.io/cd2020ag3/content/index.html">https://s40723110.github.io/cd2020ag3/content/index.html</a></span></p>
 <p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
 <h4>利用 cmsimde 建立靜態網誌方法:</h4>
 <p>1. 在 github 建立倉儲, git clone 到近端</p>
@@ -9,11 +12,7 @@
 <p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
 <p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>Week</h1>
+<p></p><h1>Week</h1>
 <h3>week 2</h3>
 <h4>將python 3.7.3更新至3.8.2</h4>
 <p>1.進入<a href="https://www.python.org/downloads/release/python-382/">https://www.python.org/downloads/release/python-382/</a> </p>
@@ -69,7 +68,8 @@ Exit</pre>
 <p>9.輸入get-pip.py，開始安裝pip工具</p>
 <p>10.安裝完成後，使用 pip install <em>XXX</em>(<span>packages名字</span>)，安裝以下<span>packages:</span></p>
 <p><span>1.<strong>Flask</strong><br/>2.<strong>Markdown</strong><br/>3.<strong>lxml</strong><br/>4.<strong>bs4</strong><br/>5.<strong>flask_cors</strong><br/>6.<strong>pelican</strong><br/>7.<strong>leo</strong></span></p>
-<p><span>EX.:要安裝Flask就輸入 <span style="color: #ff0000;">pip install Flask</span> ，以此類推<br/><br/></span></p><h2>week 4</h2>
+<p><span>EX.:要安裝Flask就輸入 <span style="color: #ff0000;">pip install Flask</span> ，以此類推<br/><br/></span></p>
+<h2>week 4</h2>
 <h4>無法執行launchleo.py</h4>
 <p>當更新python為3.8.2版本並且要執行launchleo.py發現無法像之前一樣順利開啟。</p>
 <p>解決方法:</p>
@@ -253,7 +253,8 @@ command.name.1.$(file.patterns.py)=Syntax Check
 command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r'$(FilePath)')"
 </pre>
 <p></p>
-<p>將launchleo.py檔案放入SciTE編輯器就能夠順利開啟leo Editor</p><h2>Week 6</h2>
+<p>將launchleo.py檔案放入SciTE編輯器就能夠順利開啟leo Editor</p>
+<h2>Week 6</h2>
 <h3>OBS</h3>
 <p>下載<a href="https://portableapps.com/apps/music_video/obs-studio-portable">protable OBS</a></p>
 <p><img alt="" height="346" src="/images/1542.jpg" width="708"/></p>
@@ -276,7 +277,8 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p><img alt="" height="509" src="/images/84853.jpg" width="725"/></p>
 <p><strong><em>youtube直播設定</em></strong></p>
 <p>平台選擇youtube，並且要輸入自己帳號的直播金鑰</p>
-<p><img alt="" height="754" src="/images/15487231.jpg" width="982"/></p><h3>翻譯</h3>
+<p><img alt="" height="754" src="/images/15487231.jpg" width="982"/></p>
+<h3>翻譯</h3>
 <p><strong>翻譯<a href="https://drive.google.com/file/d/13THamnfayiRT4Wa9KzmjXQSP4ZW2jIej/view?usp=sharing">MechanicalDesignProcess.pdf</a> 第二章節 Building the Design後半部(P27~P33)</strong></p>
 <p><em>Footnote: (Statistical note) Some designers would make a case for some statistical probability, less than 100%, that all (4) tolerances would go in one direction, and we would not (likely) have a total of 0.025 inch. Some conservative designers would assume that all tolerance will go in the “wrong” direction, and thus，design is a “worst case.” I’ll generally disregard the “statistical” approach to tolerances for now, but it could be valuable in design situations where space is extremely constrained. See Sect. 4.8 for a discussion of:</em></p>
 <ul>
@@ -517,10 +519,457 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p>首先，我們著眼於起點並定義設計的邊界<span>-</span>我們從什麼開始，什麼是設計的“外緣”。 我們必須定義客戶所需的產品。我們看到了設計從修訂版<span>1</span>到修訂版<span>X</span>的過程，其中<span>X</span>是提供我們認為是客戶所需的設計。</p>
 <p><em>Finally, we took a look at seeing how the individual objects that need to be in the design can be optimally placed to solve customer needs. There are trade-offs to be considered, and we must be aware of how we determine the best choices between these trade-offs.</em></p>
 <p>最後，我們看了看如何最佳放置設計中需要解決的單個物體來滿足客戶需求。 需要權衡取捨，我們必須意識到我們如何決定這些權衡之間的最佳選擇。</p>
-<div id="gtx-trans" style="position: absolute; left: -4px; top: 66px;">
+<h2>Week 7</h2>
+<p><em><strong>Machanical Design Process 3.1~3.4章節翻譯</strong></em></p>
+<p><span>Chapter 3 Structural Considerations</span></p>
+<p>第<span>3</span>章 結構上的考慮<span> </span></p>
+<p><span>In the previous chapters, we defined what a successful design is and then moved on to determining the placement of the objects that will be in the design. We’ll now take up the structural considerations of the design. Why consider the structural considerations at this juncture, and why not the thermal aspects, or the user interfaces?</span></p>
+<p>在前面的章節中，我們定義了什麼是成功的設計，然後繼續確定將要在設計中放置的對象的位置。 現在，我們將討論設計的結構性考慮。 為什麼在此時考慮結構性考慮，為什麼不考慮散熱方面或用戶界面呢？<span> </span></p>
+<p><span>It’s probably only because I have a mechanical engineering background so I “naturally” first see how the design must be “structurally sound.” I feel we must build upon a “solid foundation,” so that the rest of the design can build upon that.</span></p>
+<p>可能僅是因為我擁有機械工程背景，所以我“自然地”首先了解設計必須如何“具有結構性”。 我覺得我們必須建立以“堅實的基礎”為基礎，以便其餘設計可以以此為基礎。</p>
+<p><span> </span></p>
+<p><span>The electronic enclosure (itself) is, of course, a structure that must be strong enough to work in the various environments that the customer (user) will be using the product in. So, let’s begin with a discussion of the main considerations of providing this “solid foundation.” This chapter will focus on:</span></p>
+<p>當然，電子外殼（本身）是一種結構，它必須有足夠的強度，能夠在客戶（用戶）使用產品的各種環境中工作。所以，我們先來討論一下提供這個<span> "</span>堅實的基礎<span> "</span>的主要考慮。本章的重點是：</p>
+<p><span> </span></p>
+<ul>
+<li><span> Using strength of material concepts to propose structural solutions </span></li>
+<li><span> Defining a generic process for considering the structural design of our electronic enclosure</span></li>
+<li><span> Look at some examples that specifically illustrate the general concepts We'll close this chapter with a section titled "Bonus Section". This last section is meant to add some complications to our problems on strength of materials and also to show how other considerations besides strength will be important to our design choices.</span></li>
+</ul>
+<p><span></span></p>
+<ul>
+<li><span> </span>利用材料強度概念提出結構性解決方案</li>
+<li><span> </span>確定一個通用的流程來考慮我們的電子外殼的結構設計</li>
+<li><span> </span>看看一些具體說明一般概念的例子，我們將以<span> "</span>獎勵部分 <span>"</span>作為本章的最後一節來結束。這最後一節是為了給我們在材料強度問題上增加一些複雜的問題，同時也是為了說明除了強度以外的其他考慮因素對我們的設計選擇將是多麼重要。 </li>
+</ul>
+<p><span>3.1 Introduction: Strength of Materials</span></p>
+<p><span>3.1</span>引言<span>:</span>材料的強度<span> </span></p>
+<p><span>This chapter is not an attempt to review all of the principles of strength of materials or of mechanical engineering. Entire texts have been devoted to stress, strain, and strength alone; therefore, we will just “scratch the surface” of knowledge and emphasize how some basic equations help our job to design electronic enclosures.</span></p>
+<p>本章並不試圖回顧材料強度或機械工程的所有原理。整篇文章都是專門討論應力、應變和強度的，因此，我們將只<span> "</span>從表面上<span> "</span>了解一些知識，並強調一些基本的方程如何幫助我們設計電子外殼的工作。<span> </span></p>
+<p><span>However, in the course of design of these electronic enclosures, an exacting knowledge of the structural considerations will be essential to the overall success of the design.</span></p>
+<p>但是，在設計這些電子機箱的過程中，對結構上的考慮因素的準確了解將是整個設計成功的關鍵。<span> </span></p>
+<p><span>The reader does not need a mechanical engineering degree or be an expert in strength of materials to benefit from this chapter. I’m hoping that some of the basic principles are touched-upon, enough to give the EPE Designers some value no matter where they are in their career. It was my belief that the more that designer understands basic strength of materials, the better the enclosure design would be.</span></p>
+<p>讀者不需要有機械工程專業的學歷，也不需要是機械工程領域的專家。</p>
+<p>材料的力量，使其從這一章中受益。我希望一些基本的這些原則已經觸及到了，足以讓<span>EPE</span>設計師無論在其職業生涯的哪個階段都有一定的價值。我認為，設計師越是了解材料的基本強度，越是了解材料的基本強度，圍擋設計就會越好。</p>
+<p><span>For example, the EPE Designer can design an enclosure using 1/8-inch-thick aluminum for the enclosure material. Testing may prove that 1/8-inch-thick aluminum does indeed pass the shock and vibration testing. However, here are some questions to ask about this choice of thickness and material for the design:</span></p>
+<ul>
+<li><span> Could we have used 1/16-inch-thick aluminum instead, which would have saved weight and possibly been easier to fabricate?</span></li>
+<li><span> Could we have used 1/8-inch-thick plastic instead, which would again have saved weight and possibly been easier to fabricate?</span> </li>
+</ul>
+<p>例如，<span>EPE</span>設計人員可以使用<span>1/8</span>英寸厚的鋁作為外殼材料設計外殼。測試可能證明，<span>1/8</span>英寸厚的鋁材確實能通過衝擊和振動測試。但是，這裡有一些關於這種厚度和材料選擇的設計問題<span>:</span></p>
+<ul>
+<li><span> </span>我們能不能用<span>1/16</span>英寸厚的鋁材來代替，這樣可以節省重量，可能更容易製造？</li>
+<li><span> </span>我們能不能用<span>1/8</span>英寸厚的塑料來代替，這樣又可以節省重量，而且可能更容易製造？ </li>
+</ul>
+<p><span>So, as you can see from the above questions, it is not enough to just solve the problem, we need to solve the problem in the most cost-efficient manner possible. We’ll get into the detail of “the most cost-efficient manner” at the beginning of Chap. 4. But for now, we’ll concentrate on determining suitable designs that are at least structurally successful.</span></p>
+<p>所以，從上面的問題中可以看出，僅僅解決這個問題是不夠的，我們需要用最有成本效益的方式來解決問題。</p>
+<p>我們將在第四章開始的時候再詳細介紹<span> "</span>最具成本效益的方式<span>"</span>，但現在，我們將集中在確定合適的設計，至少在結構上是成功的。<span> </span></p>
+<p><span>One of the biggest contributions that a designer will make to the design of the electronic enclosure is data to prove that the design will hold up “structurally” to the rigors of the customer product environment. I’m hopeful that whatever the reader’s background is, they will be able to propose a design for an electronic enclosure that will be strong enough to pass the rigors of testing. I’ll introduce some of the basic equations and concepts involved to help even the beginning EPE Designer, and hopefully it will also help the veteran EPE Designer</span></p>
+<p><span> </span>設計師對設計的最大貢獻之一是 電子外殼是證明設計將<span> "</span>結構上<span> "</span>能承受得住的數據。嚴謹的客戶產品環境。我希望無論讀者的背景是，他們將能夠提出一個電子外殼的設計方案，並在此基礎上，對電子外殼進行設計。會有足夠的實力通過嚴格的測試。我將介紹一些基本的 所涉及的方程和概念，甚至可以幫助初學<span>EPE</span>設計者，以及希望這也能幫助到資深的<span>EPE</span>設計師。</p>
+<p><span>The fundamental approaches for designing a suitable structure for an electronic</span></p>
+<p><span>enclosure break down into four basic approaches:</span></p>
+<ol>
+<li><span> Take a look at similar products that already exist, and use the solution already</span></li>
+</ol>
+<p><span>designed as a quick starting point for the design at hand. Pluses for this kind of</span></p>
+<p><span>approach are speed, but the downside is that your design may suffer due to lack</span></p>
+<p><span>of creativity toward solving a unique problem that your specific product should</span></p>
+<p><span>solve.</span></p>
+<ol start="2">
+<li><span> Quick, “back-of-the-envelope” design. This approach uses some rudimentary</span></li>
+</ol>
+<p><span>design equations on simplified structural elements. We’ll explore some examples</span></p>
+<p><span>of these design approaches with some example problems later on in this</span></p>
+<p><span>chapter.</span></p>
+<ol start="3">
+<li><span> More complex analysis. This is explored a bit more in Sect. 3.3 on “Analysis</span></li>
+</ol>
+<p><span>Required.” Again, this text will not cover much ground for designs requiring</span></p>
+<p><span>complex analysis. What I would like to emphasize in this chapter is a feel for the</span></p>
+<p><span>structural elements of the design and what some “quick fixes” would be for</span></p>
+<p><span>improved designs.</span></p>
+<ol start="4">
+<li><span> Overdesign  – Of course, overdesign is not the correct answer for all of the designs. I’ve already touched upon this above in the example on the solution using 1/8 inch aluminum. I’ll go into another example of overdesign below. In a competitive product market, where customers make buying decisions mainly on price, overdesign will likely lead to increased product cost (or, certainly, increased weight and size). Structural overdesign is basically starting with a design that has a very good likelihood of success of passing structural testing, that is, surviving the customer usage environment for shock and vibration.</span></li>
+</ol>
+<p>設計合適的電子外殼結構的基本方法可分為以下四種基本方法。</p>
+<ol>
+<li><span> </span>看一看已經存在的類似產品，把已經設計好的方案作為手頭設計的快速出發點。這種方法的好處是速度快，但壞處是你的設計可能會因為缺乏創造性地解決一個獨特的問題而受到影響，而這正是你的具體產品應該解決的問題。</li>
+</ol>
+<ol start="2">
+<li><span> </span>快速、<span>"</span>後發製人<span> "</span>的設計。這種方法是在簡化的結構要素上使用一些基本的設計方程。我們將在本章後文中結合一些實例問題探討這些設計方法</li>
+</ol>
+<ol start="3">
+<li><span> </span>比較複雜的分析。這將在第<span>3.3</span>節<span> "</span>分析<span> "</span>中稍作探討。<span> 3.3</span>節<span> "</span>所需分析<span> "</span>中作了更多探討。同樣，對於需要復雜分析的設計，這一章的內容不會涉及太多。在這一章中，我想強調的是對設計中的結構要素的感覺，以及一些<span> "</span>快速修正<span> "</span>的設計會有哪些<span> "</span>快速修正<span>"</span>。 </li>
+</ol>
+<ol start="4">
+<li><span> </span>過度設計<span>--</span>當然，過度設計並不是所有設計的正確答案。我在上面關於解決方案的例子中已經涉及到了使用<span>1/8</span>英寸鋁這個問題。下面我再以另一個例子來說明一下設計上的過度設計。在競爭激烈的產品市場上，客戶主要是根據價格做出購買決定，過度設計很可能會導致產品成本的增加（當然，也可以說是重量和尺寸的增加）。結構過度設計，基本上是從一個設計開始，要想通過結構測試，即經得起客戶使用環境的衝擊和振動的衝擊和振動的考驗，其成功的可能性是非常大的。 </li>
+</ol>
+<p><span>A lot can be said for overdesign.  The EPE Designer could determine that a bracket that is 18 gauge (0.048) thick metal would “do the job” but, instead, choose 16 gauge (0.060) thick metal. Increasing the thickness of the bracket gives one some comfort for a couple of reasons:</span></p>
+<ul>
+<li><span> That the design will stand up to some of the forces that are not known to a high degree of precision. This will be further explored in Sect. 3.2 on “Design Process.”</span></li>
+<li><span> That there is just a “factor of safety” greater than 1.0 in the design. A factor of safety equal to 1.0 means that your design just meets the design criteria. A discussion on the considerations of designing with increased factor of safety is covered in Sect. 3.2 of this chapter.</span> </li>
+</ul>
+<p>對於過度設計，可以說有很多東西。<span> EPE</span>設計師可以確定，<span>18</span>號（<span>0.048</span>）厚的金屬支架可以<span> "</span>完成工作<span>"</span>，但選擇<span>16</span>號（<span>0.060</span>）厚的金屬支架。增加支架的厚度，會給人帶來一定的舒適感，原因有以下幾個<span>:</span></p>
+<ul>
+<li><span> </span>計將經受住一些精度不高的力的考驗。這將在關於<span> "</span>設計<span> "</span>的第<span>3.2</span>節中進一步探討。<span> 3.2</span>節<span> "</span>設計過程<span> "</span>中進一步探討。</li>
+<li><span> </span>即設計中只是有一個大於<span>1.0</span>的<span> "</span>安全係數<span>"</span>。安全係數等於<span>1.0</span>意味著你的設計只是滿足了設計標準。關於增加安全係數的設計考慮因素的討論將在本章第<span>3.2</span>節中介紹。本章第<span>3.2</span>節將討論增加安全係數的設計注意事項。 </li>
+</ul>
+<p><span>Also, it is possible that there may be some economical reason for placing 0.060 thick metals in the design. For example, if the majority of the design is 0.060 thick already, and if the bracket can be made out of a piece of “scrap,” a savings might result.</span></p>
+<p>另外，在設計中放置<span>0.060</span>厚的金屬，也有可能是出於經濟上的考慮。比如說，如果設計的大部分已經是<span>0.060</span>厚，如果支架可以用一塊<span> "</span>廢品<span> "</span>做出來，那麼可能會節省一些費用。</p>
+<p><span>already, and if the bracket can be made out of a piece of “scrap,” a savings might result.</span></p>
+<p><span>It is very possible (in the above example) that using 0.048 thick metals with the addition of some simple “ribs” or bends would make the design much stronger than 0.060 thick metals. This is what I would like to spend some time on, and this issue of adding ribs to a design is explored in the problem shown in Sect. 3.4.2.</span></p>
+<p>如果支架可以用一塊<span> "</span>廢品<span> "</span>製成，可能會節省成本。</p>
+<p>這很有可能（在上面的例子中），使用<span>0.048</span>厚的金屬，再加上一些簡單的<span> "</span>肋條<span> "</span>或折彎，會使設計的強度比<span>0.060</span>厚的金屬要高得多。這也是我想花點時間來研究的，並且在<span>3.4.2</span>節所示的問題中探討了在設計中增加肋骨的問題。</p>
+<p><span>3.2 Design Process for Structures</span></p>
+<p><span>I’d like to give the reader a generic process for designing the electronic enclosure (or, an individual part in the enclosure) that will satisfy the structural considerations of the design. By going through these six steps, the designer should be ready to propose a material and cross section that will work. I’ll individually break out the six steps as subsections.</span> </p>
+<p><span>3.2 </span>結構的設計過程<span> </span></p>
+<p>我想給讀者提供一個通用的設計流程，以滿足電子外殼（或者說，外殼中的單個部件）的結構考慮，滿足設計的結構考慮。經歷了這六個步驟，設計師應該可以提出可行的材料和橫斷面了。我把這六個步驟單獨分解為小節。</p>
+<p><span> </span><span>3.2.1 Similar Designs</span><span> </span></p>
+<p><span>How have other designs in the industry handled similar situations? The other designs could be from examples within your own company (past products) or from competitive products outside of your own company.</span><span> </span></p>
+<p><span>3.2.1 </span>類似設計<span> </span></p>
+<p>業內其他設計是如何處理類似情況的？其他設計可以來自於自己公司內部的例子（過去的產品），也可以來自於自己公司以外的競爭產品。</p>
+<p><span> </span><span>3.2.2 Forces on Part</span><span> </span></p>
+<p><span>Determine the forces (static and dynamic) on the object – amplitude and direction of those forces. The part’s own weight generally doesn’t come into consideration in electronic enclosures for static forces but does get considered for dynamic forces. In this text, I refer to “objects,” “parts,” and “members,” but they should all be considered being one-in-the-same.</span></p>
+<p><span> </span></p>
+<p><span>3.2.2 </span>部分的力量</p>
+<p>確定物體上的力（靜態和動態）<span>--</span>這些力的振幅和方向。在電子外殼中，一般不考慮零件本身的重量，但動態力會考慮到靜力。在這篇文章中，我指的是<span> "</span>物體<span>"</span>、<span>"</span>零件<span> "</span>和<span> "</span>成員<span>"</span>，但它們都應該被認為是一體的。<span> </span></p>
+<p><span>3.2.3 Existing End Conditions</span><span> </span></p>
+<p><span>Determine the “end conditions” of the object, that is, its degrees of freedom of movement, and how the member will be supported. Common end conditions are “fixed” (not allowed to move) or “free” (allowed to rotate). End conditions have an effect on determining the amount of stress that loads will create.</span> </p>
+<p><span>3.2.3 </span>現有的最終條件</p>
+<p>確定物體的<span> "</span>末端條件<span>"</span>，即物體的運動自由度，以及構件的支撐方式。常見的端部條件有<span> "</span>固定<span>"</span>（不允許移動）或<span> "</span>自由<span>"</span>（允許旋轉）。端部條件對確定載荷將產生的應力大小有影響。<span> </span></p>
+<p><span>3.2.4 Propose Material and Cross Section</span></p>
+<p><span>Determine the material and cross-sectional combination needed to support those forces (from Sect. 3.2.2), keeping in mind that “strength” is an inherent aspect that belongs to materials (so, the higher the yield strength of the material, the more loadbearing ability that material contains), and forces produce stresses in those materials. All materials have limits for maximum stress where we either have the start of deformation (yield strength) or complete failure point (ultimate strength). Maximum stress in the member is generally known by the “common equation” of</span><span> </span></p>
+<p><span>σ = Mc / I</span><span> </span></p>
+<p><span>3.2.4 </span>提出材料和橫斷面的建議</p>
+<p>確定支撐這些材料和截面組合所需的材料和截面組合。力<span>(</span>來自<span>3.2.2.2</span>節<span>)</span>，牢記<span> "</span>力量<span> "</span>是一個固有的方面，即屬於材料（所以，材料的屈服強度越高，材料的承載能力越強），力在這些材料中產生應力。所有的材料都有最大應力的極限，在這裡，我們要不就有了開始的 變形（屈服強度）或完全失效點（極限強度）。</p>
+<p>構件的最大應力一般由<span> "</span>通用方程<span> "</span>可知，其最大應力為</p>
+<p><span>σ = Mc / I</span></p>
+<p><span>where:</span></p>
+<p><span>σ  is the maximum stress in the member.</span></p>
+<p><span>C  is the distance of extreme “fiber” from bending axis. </span></p>
+<p><span>I  is the moment of inertia. This is a property of the cross-sectional area of the object. </span></p>
+<p><span>M  is the maximum moment in the cross section furthest from where the force is applied. It is that force times its distance from an end-point condition to where the force is applied.</span></p>
+<p>其中：</p>
+<p>σ為構件中的最大應力。</p>
+<p><span>c</span>是極限<span> "</span>纖維<span> "</span>與彎曲軸的距離。</p>
+<p><span>I</span>是慣性力矩。這是物體的橫截面積的一個屬性。</p>
+<p><span>M</span>是離受力處最遠的橫截面上的最大彎矩。</p>
+<p>應用。它是指該力乘以其從端點條件到下列地點的距離</p>
+<p>力的作用。<span> </span></p>
+<p><span>Basically, only two choices initially exist to design higher load-bearing members (as the terms “c/I” are both related to cross-sectional area and that area’s “dispersal” away from the “neutral plane” of bending).</span></p>
+<p>基本上，最初只有兩種選擇來設計較高的承重構件（因為術語<span> "c/I "</span>都與橫截面積和該區域的<span> "</span>分散<span> "</span>遠離彎曲的<span> "</span>中性平面<span> "</span>有關）。<span> </span></p>
+<ul>
+<li><span> Change the material, which allows a change to the stress limits. So, choosing a material with higher stress limits allows more loading to be placed on that member.</span></li>
+<li><span> </span>改變材料，就可以改變應力極限值。所以，選擇應力極限較高的材料，可以使該構件承受更多的載荷。</li>
+</ul>
+<ul>
+<li><span> Change the material’s cross-sectional property, basically the member’s second moment of area (also known as the moment of inertia, I) and the amount of area that can be concentrated away from the member’s “neutral axis” or centroid.</span></li>
+</ul>
+<p><span>Increasing area will essentially increase a member’s ability to carry more loads. Increasing that area away from the member’s “neutral axis” will also help the member carry more load (which is why “I-beams,” which have a lot of the member’s cross-sectional area very far from the “neutral axis,” are excellent loadcarrying members).</span><span> </span></p>
+<ul>
+<li>改變材料的橫截面特性，基本上是指構件的二次 面積矩（又稱慣性矩，<span>I</span>）和麵積的大小 可以集中在遠離成員的<span> "</span>中軸<span> "</span>或中心點的地方。</li>
+</ul>
+<p>增加面積將從本質上提高構件承載更多載荷的能力。增加遠離構件<span>"</span>中軸<span>"</span>的面積也將有助於構件承載更多的載荷（這就是為什麼<span>"</span>工字鋼<span>"</span>，它的大部分構件的橫截面積離<span>"</span>中軸線<span>"</span>很遠，是很好的承載構件）。<span> </span></p>
+<p><span>I’ve illustrated the interrelation between changing both material and cross section in Fig. 3.1. Here, we have a very common load situation, one where a force is acting on the end of the member, and the member has a fixed end condition. We will be showing how various changes in (either or both) material and cross section can solve a problem. The basic problem is finding a member strong enough to survive this load, a 2000 pound force. The EPE Designer is tasked with determining both the material and cross section of the member so that the maximum stress in the member will be under the maximum stress (let’s say yield stress) allowed by the particular material. So, we can utilize the equation from above as a starting point in the design:</span></p>
+<p><span>σ = Mc / I</span></p>
+<p>我在圖<span>3.1</span>中說明了改變材料和橫截面之間的相互關係。在這裡，我們有一個很常見的負載情況，一個力是作用於成員的末端，並且成員有固定的末端條件。我們將展示材料和橫截面的各種變化（其中之一或兩者）如何能</p>
+<p>解決一個問題。最基本的問題是找到一個足夠強大的成員來生存 這個載荷，即<span>2000</span>磅的力量。<span> EPE</span>設計師的任務是確定構件的材料和截面，使構件中的最大應力在特定材料允許的最大應力（比方說屈服應力）下。因此，我們可以利用上面的公式作為設計的出發點<span>:</span></p>
+<p><span>σ = Mc / I</span><span> </span></p>
+<p><span>We can calculate the maximum moment, M, as being equal to 48  inch  ×  2000 pounds, which we’ll then say is 96,000 in-lb (this will be the same value for any material and cross section that we choose). Let’s put forth two candidate materials: </span></p>
+<p><span>Pine wood, which has a yield stress of 1200 pounds/in3 (psi) Aluminum, CR H-18, which has a yield stress of 22,000 psi</span></p>
+<p>我們可以計算出最大彎矩，<span>M</span>等於<span>48</span>英寸×<span>2000</span>磅，然後我們就說是<span>96000</span>英磅（這個值對於我們選擇的任何材料和截面都是一樣的）。讓我們提出兩種候選材料<span>:</span></p>
+<p>松木，其屈服應力為<span>1200</span>磅<span>/3</span>的松木<span> (psi)</span></p>
+<p>鋁，<span>CR H-18</span>，其屈服應力為<span>22,000 psi</span>。<span> </span></p>
+<p><span>Let’s keep to simple rectangular shapes, which have the moment of inertia value of (for either material):</span></p>
+<p><span>I =bh</span><sup><span>3</span></sup><span>/12</span></p>
+<p>讓我們保持簡單的長方形形狀，其慣性矩值為（對任何一種材料來說<span>:</span></p>
+<p><span>I =bh</span><sup><span>3</span></sup><span>/12</span></p>
+<p><span>where </span></p>
+<p><span>b is the width of the member and h is the height of the member in cross section. In this example, c, which is the distance from the extreme fiber to the bending axis, will be h/2. Thus, our equation for stress becomes:</span></p>
+<p><span>σ = Mc / I = </span>(<span>96000)×(h/2)</span>)<span>/ bh<sup>3</sup>/12 = 576, 000 bh<sup>3 </sup>/bh<sup>2</sup></span></p>
+<p>其中</p>
+<p><span>b</span>為構件的寬度，<span>h</span>為構件的橫截面高度。在這個例子中，<span>c</span>，是指從極點纖維到彎曲處的距離，在這個例子<span>c</span>中，即從極端纖維到彎曲軸的距離，將是<span>h/2</span>。因此，我們的應力方程為：</p>
+<p><span>σ = Mc / I = </span>(<span>96000)×(h/2)</span>)<span>/ bh<sup>3</sup>/12 = 576, 000 bh<sup>3 </sup>/bh<sup>2</sup></span></p>
+<p><span>(Note that the stress in this member is dependent on the height of the member squared, which underscores the need for high “aspect ratio” (the ratio of height to width) cross sections.)</span></p>
+<p><span>(</span>注意，該構件中的應力取決於構件的平方高度，這就強調了高<span> "</span>長寬比<span>"(</span>高與寬之比<span>)</span>橫截面的必要性<span>)</span>。</p>
+<p><span> </span></p>
+<p><span><img alt="" height="758" src="/images/註解 2020-04-20 210704.jpg" width="599"/></span></p>
+<p><span> </span></p>
+<p><span>3.2.4.1 Pine Wood Solution</span></p>
+<p><span>3.2.4.1 </span>松木解決方案</p>
+<p><span> </span></p>
+<p><span>Let’s try to design the member that will be made of pine wood. By putting in: </span></p>
+<p><span>b = 4 inch and h = 12 inch, we see that the maximum stress will be 1000 psi. This member (pine wood, with a cross section of 4 × 12) has a “stress limit” of 1200 psi, and the load on it is only 1000 psi. Nice, we have “overdesigned” the member (with a factor of safety of 120%).</span></p>
+<p>讓我們嘗試著設計出用松木製作的成員。通過輸入<span>:</span></p>
+<p><span>b=4</span>英寸，<span>h=12</span>英寸，我們可以看到最大應力為<span>1000psi</span>。這個構件（松木，橫截面為<span>4</span>×<span>12</span>的松木）的<span> "</span>應力極限<span> "</span>是<span>1200psi</span>，而它的載荷只有<span>1000psi</span>。很好，我們對這個構件進行了<span> "</span>過度設計<span>"</span>（安全係數為<span>120%</span>）。</p>
+<p><span> </span></p>
+<p><span>Now, the EPE Designer needs to look at “other” design constraints (like weight or cost) to make a decision to see if this pine wood beam will be a good candidate for our electronic enclosure.</span></p>
+<p>現在，<span>EPE</span>設計師需要看一下<span> "</span>其他<span> "</span>設計限制因素（如重量或成本），以決定這種鬆木樑是否適合我們的電子外殼。</p>
+<p><span> </span></p>
+<p><span>Spoiler alert: We’ll discuss the 15 considerations for determining material selection for any part in Chap. 4, but for now, just look at weight as another consideration for the “final choice” of material and cross section.</span></p>
+<p><span>Spoiler</span>提醒：我們將在第四章中討論決定任何零件的材料選擇的<span>15</span>個注意事項，但現在，只需將重量作為材料和橫截面的<span> "</span>最終選擇<span> "</span>的另一個考慮因素。</p>
+<p><span> </span></p>
+<p><span>Let’s look at the weight of this pine wood beam. At 30 pounds/ft3 , the beam will be 40 pounds. Fine (for now).</span></p>
+<p>我們來看看這個松木樑的重量。在<span>30</span>磅<span>/</span>英尺<span>3</span>，這根木樑將是<span>40</span>磅。很好（目前）。</p>
+<p><span> </span></p>
+<p><span>3.2.4.2 Aluminum Solution</span></p>
+<p><span>3.2.4.2</span>鋁溶液<span> </span></p>
+<p><span>Design is all about presenting some logical choices, so let’s look at an aluminum beam.</span></p>
+<p>設計都是為了呈現出一些合理的選擇，所以我們來看看鋁梁。</p>
+<p><span>We can choose,</span></p>
+<p>我們可以選擇，</p>
+<p><span>b = 4 inch and h = 2.5 inch. We can see that the maximum stress will be 23,100 psi. This is above the maximum yield stress for the aluminum, so this will not be structurally satisfactory in our design.</span></p>
+<p><span>b=4</span>英寸，<span>h=2.5</span>英寸。我們可以看到，最大應力將達到<span>23,100 psi</span>。</p>
+<p>這高於鋁材的最大屈服應力，因此在我們的設計中，這將不能滿足結構上的要求。</p>
+<p><span>But what about remembering that the height of the beam is the larger “factor” in our calculations for moment of inertia,</span></p>
+<p>但要記住，樑的高度是我們計算慣性力矩的較大<span> "</span>因素<span>"</span>，那怎麼辦？</p>
+<p><span>b = 2.5 inch and h = 4 inch? This will be the same cross-sectional area as the previous example for the aluminum beam. Now, the maximum stress will be 14,400 psi, well within the maximum of 22,000 psi for this aluminum. Thus, “rotating” the same cross section, where the thicker aspect is in the direction of the load force, allowed this choice of material and cross section to be structurally successful.</span></p>
+<p><span>b=2.5</span>英寸，<span>h=4</span>英寸<span>? </span>這將是與上例中鋁樑的橫截面積相同。現在，最大應力將是<span>14,400psi</span>，遠在該鋁的最大<span>22,000psi</span>之內。因此，<span>"</span>旋轉<span> "</span>相同的橫截面，較厚的一面在負載方向上的<span> "</span>旋轉力<span>"</span>，使這種材料和截面的選擇在結構上獲得了成功。<span> </span></p>
+<p><span>Let’s look at the weight of this aluminum beam. At 169 pounds/ft3 , the beam will be 47 pounds. This compares to 40 pounds for the pine wood.</span></p>
+<p>我們來看看這根鋁樑的重量。在<span>169</span>磅<span>/</span>英尺<span>3</span></p>
+<p>混凝土的重量是<span>47</span>磅，而鬆木的重量是<span>40</span>磅。相比之下，松木的重量為<span>40</span>磅。<span> </span></p>
+<p><span>In summary, we have looked at how two different materials (pine wood and aluminum) could be used to solve the structural problem. We can develop crosssectional areas for each material that solves the structural problem.</span></p>
+<p>綜上所述，我們研究了兩種不同材料（松木和鋁材）如何解決結構問題。我們可以為每種材料製定解決結構問題的橫截面面積。</p>
+<p><span>In design, deformation often shares an equal importance with strength. A load member may have sufficient strength to withstand a particular load, but it may deflect an unacceptable amount beyond the elasticity of the engineering material. Problems, where deflection (and thus the material’s modulus of elasticity, E) is also under consideration, are shown in some examples further on in this chapter.</span></p>
+<p>在設計中，變形往往與強度同等重要。一個受力構件可能有足夠的強度來承受特定的載荷，但它的變形量可能超出工程材料的彈性範圍。</p>
+<p>在本章中的一些例子中，變形（以及材料的彈性模量<span>E</span>）也在考慮範圍之內。</p>
+<p><span>The economics of the above choices (change material or change material cross section) pose an interesting problem to EPE Designers. Many combinations of material and cross-sectional area will work, but a choice must be made that fits the overall goals of the project.</span></p>
+<p>上述選擇的經濟性（改變材料或改變材料截面）給<span>EPE</span>設計人員帶來了一個有趣的問題。材料和截面面積的許多組合都會起作用，但必須做出符合項目總體目標的選擇。</p>
+<p><span>Besides functioning, it must meet project goals of cost, manufacturability, risk, weight, time to market, etc. These choices will be further investigated at the beginning of Chap. 4.</span></p>
+<p>除了功能，還必須滿足項目成本目標、可製造性、風險、重量、上市時間等。這些選擇將在第四章開始時進一步研究。</p>
+<p><span>It is possible that alternative solutions would need to be reviewed, tested, and prototyped. One of the biggest assets a designer can bring to the design would be to quickly find the logical choices to be made among the viable candidates for material/cross-sectional choice that will solve the problem at hand.</span></p>
+<p>有可能需要對替代方案進行審查、測試和原型設計。設計師能給設計帶來的最大的財富之一就是快速地在材料<span>/</span>截面選擇中找到合理的選擇，以解決眼前的問題。</p>
+<p><span> </span></p>
+<p><span>3.2.5 Combine Function</span></p>
+<p><span>3.2.5 </span>組合功能<span> </span></p>
+<p><span>Can the part being designed be combined with another part in the assembly which is adjacent to this part? Basically, can two separate parts (being envisioned) be combined into a single part? This is illustrated in Fig. 3.2.</span></p>
+<p>正在設計的零件能否與裝配中與該零件相鄰的另一個零件組合在一起？基本上，兩個獨立的部分（被設想的）能否合併為一個部分？如圖<span>3.2</span>所示。</p>
+<p><span>The “alternative thinking” aspect of looking at the part being combined is to actually look to create two separate parts from a (envisioned) single part. This could result in a lower overall cost reduced solution to the combined design.</span></p>
+<p>看待組合的零件的<span> "</span>另類思維<span> "</span>方面是，實際上是看如何從（設想的）單一零件中創造出兩個獨立的零件。這可能會使組合設計的整體成本更低，降低了設計方案的成本。</p>
+<p><span>One of the main choices (for a candidate material/cross-section solution) will be determining how to fabricate this solution in production. For example, some of the choices involved here are:</span></p>
+<p>主要選擇之一（對於候選材料<span>/</span>橫截面解決方案）將決定如何在生產中製造這種解決方案。例如，這裡涉及的一些選擇是：</p>
+<p><span> </span></p>
+<ul>
+<li><span> What is the tooling budget for the project? Can the project “afford” spending an amount of capital needed for casting, injection molding, extruding, or other fabrication techniques that may be under consideration? Is there existing tooling that can be utilized? A determination must be made to find the “payback period” of a tooled solution. For example, knowing:</span></li>
+</ul>
+<p><span> </span></p>
+<ol>
+<li><span> How much tooling will cost </span></li>
+<li><span> How many parts will be needed (over the product “lifetime”)</span></li>
+<li><span> How much un-tooled part will cost </span></li>
+<li><span> How much the tooled part will cost</span></li>
+</ol>
+<p><span> </span></p>
+<ul>
+<li><span> </span>項目的工裝預算是多少？項目是否能<span> "</span>負擔得起<span> "</span>鑄造、注塑、擠壓或其他製造技術所需的資金支出？是否有現有的模具可以利用？必須找到模具化解決方案的<span> "</span>投資回收期<span>"</span>。比如說，知道<span>:</span></li>
+</ul>
+<p><span> </span></p>
+<ol>
+<li><span> </span>工裝的費用是多少</li>
+<li><span> </span>需要多少零件（在產品的<span> "</span>使用壽命<span> "</span>內）。</li>
+<li><span> </span>未加工的零件要多少錢</li>
+<li><span> </span>刀具部分的成本是多少</li>
+</ol>
+<p><span> </span></p>
+<p><span>will determine when the “payback period” of the tooled solution. For example, if tooling will cost $50,000, and the un-tooled part cost is $10, while the tooled part cost is $1, this would result in a savings of $9 per part needed.</span></p>
+<p>將決定工具化方案的<span> "</span>投資回收期<span> "</span>的時間。例如，如果模具的成本為<span>50000</span>元，未加工的零件成本為<span>10</span>元，而加工後的零件成本為<span>1</span>元，則每個零件所需的成本可節省<span>9</span>元。</p>
+<p><span>Thus, the tooled part pays for the tooling in 50,000/9 = approx. 5500 parts. If 5500 parts are expected to be sold in a year, then the “payback period” will be approx. 1 year. See previous discussion on tooling “breakeven” in Sect. 1.7.</span></p>
+<p><span> </span></p>
+<p>因此，用<span>50000/9=</span>約<span>5500</span>個零件來支付模具費。如果<span>5500</span>個零件預計在一年內賣出，那麼<span> "</span>投資回收期<span> "</span>約為<span>1</span>年。見前文<span>1.7</span>節中關於模具<span> "</span>盈虧平衡<span> "</span>的討論。</p>
+<p><span> </span></p>
+<ul>
+<li><span> Are there “off-the-shelf” or “previously designed” solutions that could be used in the design? This could save the tooling cost, and the increased volumes of this “new” usage (when combined with the “old” usage) will lower the individual piece cost.</span></li>
+<li><span> </span>是否有<span> "</span>現成的<span> "</span>或<span> "</span>以前設計的<span> "</span>方案可以在設計中使用？這樣可以節省模具成本，而且這種<span> "</span>新<span> "</span>的使用量的增加（與<span> "</span>舊<span> "</span>的使用量相結合）會降低單件成本。</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> Can the fabrication technology be phased-in over the course of the project? That is, can we use one fabrication technique in the prototype/first production stage (e.g., CNC milling) and then switch over to a tooled solution (e.g., casting) after first production? With this scenario, cost reductions are phased-in, and the savings doesn’t occur near term (but, rather, in a longer time period).</span></li>
+<li><span> </span>製造技術是否可以在項目過程中分階段引進？也就是說，我們是否可以在原型<span>/</span>首次生產階段使用一種製造技術（例如，<span>CNC</span>銑削），然後在首次生產後改用模具化解決方案（例如，鑄造）？在這種情況下，成本的降低是分階段進行的，而節省的成本並不是短期內發生的（而是在一個較長的時間段內）。</li>
+</ul>
+<p><span> <img alt="" height="368" src="/images/註解 2020-04-20 210640.jpg" width="762"/></span></p>
+<p><span>3.2.6 Determine Factor of Safety Needed</span></p>
+<p><span>3.2.6 </span>確定所需的安全係數</p>
+<p><span> </span></p>
+<p><span>A determination of “factor of safety” must be reviewed at this time. That is, answers to the following questions must be known:</span></p>
+<p>此時必須對<span> "</span>安全係數<span> "</span>的確定進行審查。也就是說，必須知道以下問題的答案：</p>
+<p><span> </span></p>
+<ul>
+<li><span> If the part fails, does anyone get injured? What is the cost of an unpredictable failure in lives, in dollars, and in time?</span></li>
+<li><span> </span>如果零件出現故障，會不會有人受傷？一個不可預知的故障，以生命為單位，以美元為單位，以時間為單位，代價是多少？</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> How critical is this particular part in the overall function of the product? If this part fails, does the entire product fail?</span></li>
+<li><span> </span>這個特定的部分在產品的整體功能中的關鍵性有多大？如果這個部分出了問題，整個產品會不會出問題？</li>
+<li><span> How well are the forces known (from Sect. 3.2.2 above)? Do we know the “error bars,” that is, how much the forces can deviate from the assumed nominal value?</span></li>
+<li><span> </span>力的已知程度如何（由上文<span>3.2.2</span>節）？我們是否知道<span> "</span>誤差條<span>"</span>，也就是說，力可以偏離假定的標稱值多少？</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> Determine the “critical aspects” of the chosen design (material or geometry), and how in-production will they be specified, certified, and inspected? Make notes to assure these steps (certification/inspection) will be done. Determine the testing required in the various stages of the design that will be required to assure that the final design will be adequate for shipment to the customer in production.</span></li>
+<li><span> </span>確定所選設計的<span> "</span>關鍵環節<span>"</span>（材料或幾何形狀），以及在生產中如何規定、認證和檢驗？做好筆記，確保這些步驟（認證<span>/</span>檢驗）的完成。確定在設計的各個階段所需的測試，以確保最終設計能夠在生產過程中適當地運送給客戶。</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> There will be an optimized solution which generally can be found by analyzing the major components of the design and determining where the “weak links” in the design exist. This can be found by utilizing some testing methodologies that induce failures by testing beyond the environmental limits (such as highly accelerated life testing, HALT). By first identifying where failures might occur, then by testing design prototypes, data can be generated to determine whether certain segments are near their design limits.</span></li>
+<li><span> </span>一般來說，通過分析設計的主要部件，確定設計中的<span> "</span>薄弱環節<span> "</span>存在的地方，就會有一個優化的解決方案。這可以通過利用一些超出環境極限的測試方法（如高加速壽命測試，<span>HALT</span>）來誘發故障。通過首先確定可能發生故障的地方，然後通過測試設計原型，可以產生數據來確定某些段是否接近設計極限。</li>
+</ul>
+<p><span> </span></p>
+<p><span>If any of the above six steps in the design process do not have answers known to some degree of confidence, the designer is faced with:</span></p>
+<p>如果在設計過程中的上述六個步驟中，有任何一個步驟在一定程度上沒有已知的答案，設計師就面臨著<span>:</span><span> </span></p>
+<ul>
+<li><span> Making further inquiries to get better information.</span></li>
+<li><span> </span>做進一步的詢問，以獲得更好的信息。</li>
+</ul>
+<ul>
+<li><span> Going forward with the design. It would be rare for designers to know about all of the forces and interrelation of parts at the very beginning of the design process. Certainly, the designer can list the assumptions made and the additional information that would be essential. It is certainly possible to design parts, prototype the parts, and test them under the conditions that they will need to function in. Several approaches to this dilemma of “going forward with the design without knowing all of the information” can be taken; let’s explore an example where:</span></li>
+<li><span> </span>在設計的過程中不斷前進。對於設計師來說，如果能了解到所有的 在設計過程的一開始，設計者就可以對各部件的受力和相互關係進行分析。當然，設計者可以列舉出所做的假設和額外的假設。掌握必要的信息。當然，設計零件、製作零件的原型，並在需要的條件下進行測試，當然是可以的。應對這種<span> "</span>繼續設計<span> "</span>的困境的幾種方法。不知道所有的信息<span> "</span>可以採取；讓我們來探討一個例子</li>
+</ul>
+<p>其中：</p>
+<p><span>Design 1 has a weight that is 110% of target weight but has a 95% chance of being structurally successful. Design 2 is 100% of target weight but has a 75% chance of being structurally successful. So Design 1 is 10% over the target weight, but with a much lower risk of failing to meet the design goal of working from a structural point of view.</span></p>
+<p>設計<span>1</span>的重量是目標重量的<span>110%</span>，但結構成功的概率為<span>95%</span>。設計<span>2</span>的重量是目標重量的<span>100%</span>，但結構成功的概率為<span>75%</span>。所以設計<span>1</span>的重量是目標重量的<span>10%</span>，但從結構的角度看，結構成功的概率要低得多，無法達到設計目標。</p>
+<p><span>So, what is being “traded-off” is the time needed to optimize the design. Certainly, the product must work from a structural basis.</span></p>
+<p>那麼，被<span> "</span>換來的是優化設計所需要的時間。當然，產品一定要從結構上做起。</p>
+<p><span>It will be difficult to determine the “margin” in the design at the very beginning of the program.</span></p>
+<p>在設計之初，就很難確定設計中的<span> "</span>餘量<span>"</span>。</p>
+<p><span>Going forward with the design without knowing all of the information has value in that the “basic design” can be tested. It is hoped that the “basic design” can be modified in a quick time frame that allows the program to continue as the rest of the information is attained.</span></p>
+<p><span> </span></p>
+<p>在不知道所有信息的情況下進行設計，<span>"</span>基本設計<span> "</span>是有價值的。希望<span> "</span>基本設計<span> "</span>可以在快速的時間框架內修改<span> "</span>基本設計<span>"</span>，使程序能夠在獲得其餘信息的同時繼續進行。</p>
+<p><span> </span></p>
+<p><span>We can move forward quickly by “overdesigning” the parts or invest more time to “marginally” meet all of the requirements. These two paths are investigated a bit more below:</span></p>
+<p>我們可以通過<span> "</span>過度設計<span> "</span>來快速推進，也可以投入更多的時間來<span> "</span>勉強<span> "</span>滿足所有的要求。下面將對這兩條路徑做更多的研究<span>:</span></p>
+<p><span>A.  </span><span>“Overdesign” the parts – this approach probably guarantees that the parts will structurally function under testing. The idea here would be to iterate back to a less conservative design as testing reveals where material and weight savings are appropriate. This approach at least maximizes the chances of the design meeting the structural functionality requirements very early in the test phases of the project. However, weight changes to the design to bring these parts closer to “marginal” structural success will require time (and money) to retest the design to validate the changes. Most projects have limited time for iterative approaches to attain parts that are “perfectly” designed.</span><span></span><span></span></p>
+<p>A. 部件的<span> "</span>過度設計<span>"----</span>這種方法可能會保證部件在測試中的結構功能。這裡的想法是，當測試顯示出材料和重量的節省是合適的時候，再迭代到一個不那麼保守的設計。這種方法至少可以最大限度地提高設計滿足以下要求的可能性 在項目的測試階段的早期，就已經確定了結構功能要求。然而，為了使這些部件接近<span> "</span>邊緣<span> "</span>結構成功，對設計進行重量上的改變，需要時間（和金錢）來重新測試設計，以驗證這些改變。大多數項目的迭代方法的時間是有限的，要達到<span> "</span>完美<span> "</span>設計的零件，時間是有限的。</p>
+<p><span> </span></p>
+<p><span> </span></p>
+<p></p>
+<p><span> </span></p>
+<p><span>B. Design parts with the more time-consuming path of “just marginally” meeting both the weight and strength requirements. So, this stratagem is different than overdesign (above) in that the parts are designed that have a chance of (just barely) working. For example, if space and weight reduction are highest on the list of product requirements, a design that is “marginally” acceptable from a structural strength factor, but has a greater material and weight savings, may be what is needed. This approach attempts to balance both “risk and reward” and should have the agreement of the design team to go forward. With this design, the material and weight goal would be met. However, risk of this design not structurally working goes from 5% to 25%. So, the “B” design path shows higher risk of not meeting the product requirements for structural strength but will meet the product requirements for weight.</span></p>
+<p>B.用<span> "</span>略微<span> "</span>滿足重量和強度要求的路徑設計零件，這樣的設計更加耗時。因此，這種策略與過度設計（以上）不同，設計的零件有機會（勉強）工作。例如，如果空間和重量減少是產品要求中最高的，那麼從結構強度因素來看，<span>"</span>略微<span> "</span>可以接受，但材料和重量節省的設計可能是需要的。這種方法試圖平衡<span> "</span>風險與收益<span>"</span>，應該得到設計團隊的同意後再進行。通過這種設計，材料和重量的目標將得到滿足。但是，這種設計在結構上不可行的風險從<span>5%</span>上升到<span>25%</span>。所以，<span>"B "</span>的設計路徑顯示出了較高的風險，不能滿足產品結構強度的要求，但會滿足產品重量的要求。</p>
+<p><span> </span></p>
+<p><span>C. Blends of the above two approaches may be appropriate. That is, some parts of the design would be conservative, while other parts of the design would be more risky. This perhaps allows an “overall risk tolerance” to be a part of the overall design. Experienced design teams will know the best places in the design to “push the envelope” of acceptability.</span></p>
+<p><span> C. </span>將上述兩種方法混合使用可能是合適的。也就是說，設計的某些部分將是保守的，而設計的其他部分將是風險較大的。這或許可以讓<span> "</span>整體風險容忍度<span> "</span>成為整體設計的一部分。有經驗的設計團隊會知道設計中最適合<span> "</span>推敲<span> "</span>可接受性的地方。</p>
+<p><span> </span></p>
+<p><span>3.3 Analysis Required</span></p>
+<p><span>3.3 </span>所需的分析</p>
+<p><span> </span></p>
+<p></p>
+<p><span> </span></p>
+<p><span>There are certainly many designs that warrant the most exacting analysis in the design of electronic packaging. In any highly competitive product design area, it will be the company that does the most productive job with a given technology that will maximize its chances for success. The very highest degree of analysis will be needed if the product has:</span></p>
+<p>在電子包裝設計中，肯定有很多設計值得我們進行最嚴謹的分析。在任何一個競爭激烈的產品設計領域中，只有在給定的技術上做得最有成效的公司，才能最大限度地獲得成功的機會。如果產品具備以下條件，就需要進行最高程度的分析：</p>
+<p><span> </span></p>
+<ul>
+<li><span> A “high” production quantity. If hundreds of thousands of a particular unit are to be produced, then the savings of a dollar per unit could result in substantial total savings. An analysis that saves even a small amount of cost will result in a lot of overall profit due to the larger production quantities. If, however, only a few units are to be produced, the potential for savings is greatly reduced, and, once a design is deemed to be functional, a large investment in cost reduction will not bring substantial savings.</span></li>
+<li><span> </span>一個<span> "</span>高<span> "</span>的生產量。如果要生產幾十萬個特定的單位，那麼每單位節省一元錢的生產量，就可以節省大量的總成本。通過分析，哪怕是節約了一小部分成本，也會因為生產量較大而獲得大量的總利潤。但是，如果只生產幾台，那麼節約的可能性就會大大降低，而且，一旦一個設計被認為是可行的，在降低成本方面的大量投資也不會帶來大量的節約。</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> A high degree of safety as a requirement due to the environment that the product will be placed into. Examples of this are products that are in the transportation, utilities, medical, or educational industries. All customers need to have a safely operating product.</span></li>
+<li><span> </span>由於產品所處的環境需要高度安全。例如交通、公用事業、醫療或教育行業的產品。所有客戶都需要有一個安全運行的產品。</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> A “mission” that is critical to the customer. This would include products needed for military, space agency, or government in general.</span></li>
+<li><span> </span>一個對客戶至關重要的<span> "</span>任務<span>"</span>。這將包括軍事、航天機構或政府所需的產品。</li>
+</ul>
+<p><span> </span></p>
+<p></p>
+<p><span> </span></p>
+<p><span>Note here that there can be no excuse for a design that is so overdesigned that it lowers the profitability of the company.</span></p>
+<p>在此請注意，如果設計得太過誇張，就沒有任何藉口，以致於</p>
+<p>降低了公司的盈利能力。</p>
+<p><span> </span></p>
+<p><span>Designers and engineers should be ever vigilant to the possibility of cost reduction. The elimination of parts, the design for manufacturability, and the overall elegance of design lead to product leadership.</span></p>
+<p>設計人員和工程師應時刻警惕降低成本的可能性。淘汰零件、設計的可製造性、設計的可製造性和設計的整體優雅性導致了產品的領先性。</p>
+<p><span> </span></p>
+<p><span>It is in the first stages of design that present the most cost reduction possibilities. As the design progresses to even the prototype stages, the cost of redesigning for cost reduction starts to rise exponentially.</span></p>
+<p>在設計的最初階段，是最有可能降低成本的。隨著設計進展到原型階段，為降低成本而重新設計的成本開始成倍增加。</p>
+<p><span> </span></p>
+<p><span>More on this aspect will be presented in Chap. 6 on “Assembly and Serviceability.”</span></p>
+<p>關於這方面的更多內容將在第六章<span> "</span>裝配和可維修性<span> "</span>中介紹。</p>
+<p><span> </span></p>
+<p><span>Also, a note on safety is appropriate. There can be no excuse for underdesigning a product in any area where safety is an issue.</span></p>
+<p>另外，關於安全方面的注意事項也是適當的。在任何涉及安全問題的領域，都不能成為產品設計不足的藉口。</p>
+<p><span> </span></p>
+<p><span>Underwriters Laboratories (UL) and other safety agencies, of course, certify electronic equipment for safety considerations.</span></p>
+<p>當然，保險商實驗室<span>(UL)</span>和其他安全機構對電子設備進行認證時，當然要考慮到安全問題。</p>
+<p><span> </span></p>
+<p><span>That is, a safety agency will take a product (specifications and working units) and subject them to both review and testing.</span></p>
+<p>也就是說，安全機構會對一個產品（規格和工作單位）進行審查和測試。</p>
+<p><span> </span></p>
+<p><span>Most electronic products, certainly those sold worldwide, will have to pass rigorous agency approval certification. More on this aspect will be presented in Chap. 10, “Safety by Design.”</span></p>
+<p><span> </span></p>
+<p>大多數電子產品，當然是在全球範圍內銷售的產品，都必須通過嚴格的機構批准認證。關於這方面的更多內容將在第<span>10</span>章<span> "</span>設計安全<span> "</span>中介紹。</p>
+<p><span> </span></p>
+<p><span>The number one design consideration is still and will always be functionality. That is, the part must function as it is intended. It doesn’t matter how well it looks or how elegantly it can be produced, IF the part will fail under load. This is a major reason why the loads must be understood by the designer.</span></p>
+<p>首要的設計考慮因素仍然是並將永遠是功能。也就是說，該零件必須按其預期的功能運作。如果零件在負載下會出現故障，那麼它的外觀有多好或製作得多精美並不重要。這也是設計者必須了解負載的一個重要原因。</p>
+<p><span> </span></p>
+<p><span>Modern analysis software solutions using finite element analysis (FEA) are very ubiquitous. A search on Google reveals introductory material such as:</span></p>
+<p>使用有限元分析（<span>FEA</span>）的現代分析軟件解決方案無處不在。在<span>Google</span>上搜索一下，就會發現一些介紹性的材料，如：</p>
+<p><span> </span></p>
+<ol>
+<li><span>Finite Element Analysis, by David Roylance, MIT. Describes the three principal steps as:</span></li>
+<li>有限元分析》，作者：<span>David Roylance</span>，<span>MIT</span>。將三個主要步驟描述為：</li>
+</ol>
+<p><span> </span></p>
+<ul>
+<li><span> </span><span> Preprocessing, where a model of the part to be analyzed in which the geometry is divided into a number of discrete subregions, or “elements,” connected at discrete points called “nodes”</span></li>
+<li><span> </span>預備處理，在此過程中，要將待分析的零件模型分成若干個離散的子區 域，或稱<span>"</span>元素<span>"</span>，在離散的點上連接著被稱為<span>"</span>節點<span>"</span>的離散點。</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> Analysis, where the dataset prepared by the preprocessor is used as input to the system of linear or nonlinear algebraic equations that calculate the stresses and displacements</span></li>
+<li><span> </span>分析，其中預處理器準備的數據集被用作計算應力和位移的線性或非線性代數方程系統的輸入。</li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> Postprocessing, where the results are graphically displayed to assist in visualizing the results</span></li>
+</ul>
+<p><span> </span></p>
+<ul>
+<li><span> </span>後期處理，以圖方式顯示結果，協助將結果可視化。</li>
+</ul>
+<p></p>
+<p style="text-align: left;"><span> B. </span><span>Linear Analysis, by Professor K.  J. Bathe, from the MIT open courseware, MIT. This video series is a comprehensive course of study that presents effective finite element procedures for the linear analysis of solids and structures.</span></p>
+<p><span>B.</span>線性分析，由<span>K. J. Bathe</span>教授主講，來自麻省理工學院公開課件，<span>MIT</span>。本系列視頻課程是一門綜合性課程，介紹了固體和結構的線性分析的有效有限元程序。</p>
+<p><span>C.   Finite Element Analysis, Dr H. J. Qi. Describes the FEA process as:</span></p>
+<ul>
+<li><span> Formulating the physical model, that is, describing (perhaps, simplifying) a real engineering problem into a problem that can be solved by FEA</span></li>
+<li><span> Using the FEA model by discretizing the solid, defining material properties, and applying boundary conditions </span></li>
+<li><span> Choosing proper approximate functions, formulate linear equations, and solving these equations </span></li>
+<li><span> Obtaining results in both numerical and visual formats</span></li>
+</ul>
+<p><span> </span></p>
+<p><span>C . Finite Element Analysis</span>，<span>Dr. H. J. Qi. </span>將有限元分析過程描述為<span>:</span></p>
+<ul>
+<li><span></span>制訂物理模型，即把圓形工程問題描述（也許是簡化）成可以用有限元分析法解決的問題</li>
+<li><span></span>通過對固體進行離散化，定義材料特性，並應用邊界條件，使用有限元模型</li>
+<li><span> </span>選擇適當的近似函數，制定線性方程，並解出這些方程</li>
+<li><span> </span>以數字和視覺形式獲取結果</li>
+</ul>
+<p><span> </span></p>
+<p><span>There is no doubt that using FEA can provide much useful information about engineering problems involving structural analysis (along with solid mechanics, dynamics, and thermal analysis).</span></p>
+<p>毫無疑問，使用有限元分析可以為涉及結構分析的工程問題提供許多有用的信息（與固體力學、動力學和熱分析一起）。</p>
+<p><span> </span></p>
+<p><span>Any answers coming out of this analysis should be first tested by using simplified models and forces to see if the answers make some sense.</span></p>
+<p>從這一分析中得出的任何答案，都應首先用簡化的模型和力來檢驗，看看答案是否有一定的意義。</p>
+<p><span> </span></p>
+<p><span>Testing should be used to verify the assumptions made and the resulting answers</span></p>
+<p>應使用測試來驗證所做的假設和由此產生的答案。</p>
+<p><span> </span></p>
+<p><span>Another attribute of using FEA analysis is that small changes in the design can also be inputted into the analysis to see how the results vary. In this manner, it can be shown very quickly how to make the design better.</span></p>
+<p>使用有限元分析的另一個特點是，還可以將設計中的微小變化輸入到分析中，看看結果如何變化。通過這種方式，可以很快地顯示出如何使設計更好。</p>
+<p><span> </span></p>
+<p><span>Some companies are large enough to have an entire department devoted to FEA analysis, while others operate with the expectation that the designer will be analyzing the structures using FEA on their own.</span></p>
+<p>有些公司的規模足夠大，可以有整個部門專門負責有限元分析，而有些公司在運作時，期望設計者自己用有限元分析結構。</p>
+<p><span> </span></p>
+<div id="gtx-trans" style="position: absolute; left: -6px; top: 66px;">
 <div class="gtx-trans-icon"></div>
-</div><h1>小組直播討論</h1>
+</div>
+<h1>小組直播討論</h1>
 <p>week3</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c06esX1zO90" width="560"></iframe></p>
 <p>week4</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/lObYwRDd4Ro" width="560"></iframe></p>
+<p>week 7</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/eC1SUyP3b2Q" width="560"></iframe></p>
