@@ -991,9 +991,201 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p><span><img alt="" height="520" src="/images/註解 2020-05-24 205358.jpg" width="756"/></span></p>
 <p>開啟CD2020PJ1 帳號密碼皆為 kmol2020</p>
 <h2>week 12</h2>
-<div id="gtx-trans" style="position: absolute; left: 0px; top: 789px;">
-<div class="gtx-trans-icon"></div>
-</div><h1>小組直播討論</h1>
+<p>開啟Ubunto20.04 cd2020pj 1</p>
+<p>帳號密碼皆為:kmol2020</p>
+<p><img alt="" height="717" src="http://mde.tw/cdaw13-2/images/Annotation%202020-05-27%20094002.jpg" width="861"/></p>
+<p>進入終端機</p>
+<p><img alt="" height="815" src="http://mde.tw/cdaw13-2/images/Annotation%202020-05-27%20094224.jpg" width="863"/></p>
+<p>輸入</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_304876">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">ifconfig</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br/>會出現此錯誤</p>
+<p><img alt="" height="207" src="http://mde.tw/cdaw13-2/images/Annotation%202020-05-27%20094447.jpg" width="801"/></p>
+<p>輸入此指令安裝工具</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_296636">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html spaces">    </code> </div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo apt install net-tools</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><img alt="" height="810" src="http://mde.tw/cdaw13-2/images/Annotation%202020-05-27%20094924.jpg" width="862"/></p>
+<p>但因為是學校網路有設定proxy所以要新增proxy才能夠安裝</p>
+<p>學校網路是IPV6 所以要先設定IPV6環境</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_585493">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/netplan</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi 00-install-config.yaml</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>進入/etc/netplan 新增config</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_48301">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+<div class="line number5 index4 alt2">5</div>
+<div class="line number6 index5 alt1">6</div>
+<div class="line number7 index6 alt2">7</div>
+<div class="line number8 index7 alt1">8</div>
+<div class="line number9 index8 alt2">9</div>
+<div class="line number10 index9 alt1">10</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain"># This is the network config written by 'subiquity'</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">network:</code></div>
+<div class="line number3 index2 alt2"><code class="html spaces">    </code><code class="html plain">ethernets:</code></div>
+<div class="line number4 index3 alt1"><code class="html spaces">        </code><code class="html plain">enpes3:</code></div>
+<div class="line number5 index4 alt2"><code class="html spaces">            </code><code class="html plain">dhcp4: true</code></div>
+<div class="line number6 index5 alt1"><code class="html spaces">            </code><code class="html plain">dhcp6: true</code></div>
+<div class="line number7 index6 alt2"><code class="html spaces">            </code><code class="html plain">nameservers:</code></div>
+<div class="line number8 index7 alt1"><code class="html spaces">                </code><code class="html plain">addresses:</code></div>
+<div class="line number9 index8 alt2"><code class="html spaces">                    </code><code class="html plain">- 2001:b000:168::1</code></div>
+<div class="line number10 index9 alt1"><code class="html spaces">    </code><code class="html plain">version: 2</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>輸入以上指令後按Esc後 輸入<em><strong>:wq<span> </span></strong></em>退出編輯</p>
+<p>再使用此指令套用剛剛的更新</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_522524">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">sudo netplan apply</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<p>接著要新增目前使用proxy</p>
+<p>先進入/etc/apt/apt.conf.d會新增proxy<span>.conf</span></p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_262086">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">cd /etc/apt/apt.conf.d</code></div>
+<div class="line number2 index1 alt1"><code class="html plain">sudo vi proxy.conf</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>編輯proxy.conf</p>
+<p>新增</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_840029">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">Acquire::http::proxy "http://[2001:288:6004:17::port號]::3128";</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>輸入完畢Esc 再輸入<em><strong>:wq<span> </span></strong></em><strong>儲存離開</strong><br/><br/></p>
+<p>輸入此段指令更新剛剛port設定</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_199492">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">sudo apt update</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p></p>
+<p>-----------------------------------------------------------------</p>
+<p>使用抽籤將12個人分為一組</p>
+<p>在2小時內進行小型協同分組任務</p>
+<p><a href="https://github.com/mdecourse/cdaw12-1">https://github.com/mdecourse/cdaw12-1</a></p><h1>小組直播討論</h1>
 <p>week3</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c06esX1zO90" width="560"></iframe></p>
 <p>week4</p>
