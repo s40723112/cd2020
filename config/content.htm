@@ -1084,7 +1084,7 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <div class="line number1 index0 alt2"><code class="html plain"># This is the network config written by 'subiquity'</code></div>
 <div class="line number2 index1 alt1"><code class="html plain">network:</code></div>
 <div class="line number3 index2 alt2"><code class="html spaces">    </code><code class="html plain">ethernets:</code></div>
-<div class="line number4 index3 alt1"><code class="html spaces">        </code><code class="html plain">enpes3:</code></div>
+<div class="line number4 index3 alt1"><code class="html spaces">        </code><code class="html plain">enp0s3:</code></div>
 <div class="line number5 index4 alt2"><code class="html spaces">            </code><code class="html plain">dhcp4: true</code></div>
 <div class="line number6 index5 alt1"><code class="html spaces">            </code><code class="html plain">dhcp6: true</code></div>
 <div class="line number7 index6 alt2"><code class="html spaces">            </code><code class="html plain">nameservers:</code></div>
@@ -1153,7 +1153,7 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 </td>
 <td class="code">
 <div class="container">
-<div class="line number1 index0 alt2"><code class="html plain">Acquire::http::proxy "http://[2001:288:6004:17::port號]::3128";</code></div>
+<div class="line number1 index0 alt2"><code class="html plain">Acquire::http::proxy "http://[2001:288:6004:17::port號]:3128";</code></div>
 </div>
 </td>
 </tr>
@@ -1185,12 +1185,64 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p>-----------------------------------------------------------------</p>
 <p>使用抽籤將12個人分為一組</p>
 <p>在2小時內進行小型協同分組任務</p>
-<p><a href="https://github.com/mdecourse/cdaw12-1">https://github.com/mdecourse/cdaw12-1</a></p><h1>小組直播討論</h1>
+<p><a href="https://github.com/mdecourse/cdaw12-1">https://github.com/mdecourse/cdaw12-1</a></p>
+<h2>week 13</h2>
+<p>VirtualBox 網路設定</p>
+<p><img alt="" height="558" src="/images/network.jpg" width="952"/></p>
+<p>IPV4設定</p>
+<p><img alt="" height="469" src="/images/IPV4.jpg" width="667"/></p>
+<p>IPV6</p>
+<p><img alt="" height="469" src="/images/IPV6.jpg" width="669"/></p>
+<p>IPV4及IPV6的Guest IP皆為使用 ifconfig 查詢</p>
+<p><img alt="" height="717" src="/images/ifconfig.jpg" width="1043"/></p>
+<p>---------------------------------------------------</p>
+<p>利用Putty連接虛擬主機</p>
+<p><img alt="" height="443" src="/images/127.0.0.1.jpg" width="453"/></p>
+<p><img alt="" height="440" src="/images/putty.jpg" width="449"/></p>
+<p>X display location 為:</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">localhost:0.0</pre>
+<p>按open選擇否</p>
+<p><img alt="" height="500" src="/images/514211546.jpg" width="994"/></p>
+<p>成功畫面</p>
+<p><img alt="" height="417" src="/images/putty login.jpg" width="659"/></p>
+<p>回到Ubuntu</p>
+<p>----------------------------------------</p>
+<p>使用File Manger PCManFM 進入</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">/home/kmol2020/tmp/cd2020pj1</pre>
+<p><img alt="" height="714" src="/images/python.jpg" width="1045"/></p>
+<p>點擊wsgi.py 將圈選的地方更改為10.0.2.15</p>
+<p><img alt="" height="712" src="/images/10.0.2.15.jpg" width="1045"/></p>
+<p>回到終端機</p>
+<p>輸入</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd /tmp/cd2020pj1</pre>
+<p>進入cd2020pj1資料夾</p>
+<p>使用指令</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python3 wsgi.py</pre>
+<p>會出現此錯誤</p>
+<p><img alt="" height="713" src="/images/python3 .jpg" width="1044"/></p>
+<p>使用File Manager 在tmp目錄下創建新文件檔 名為 oauth_gm.txt</p>
+<p><img alt="" height="715" src="/images/oauth_gm.txt.jpg" width="1042"/></p>
+<p> 進入oauth_gm.txt</p>
+<p>隨便打兩行數字</p>
+<p><img alt="" height="718" src="/images/156424.jpg" width="1044"/></p>
+<p>存檔離開</p>
+<p>再回到終端機輸入</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python3 wsgi.py</pre>
+<p>成功畫面</p>
+<p><img alt="" height="717" src="/images/註解 2020-06-01 223610.jpg" width="1042"/></p>
+<p>使用瀏覽器在網址打<a href="https://127.0.0.1:8443/alogin">https://127.0.0.1:8443/alogin</a></p>
+<p>成功畫面</p>
+<p><img alt="" height="726" src="/images/login.jpg" width="1291"/></p>
+<p></p><h1>小組直播討論</h1>
 <p>week3</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c06esX1zO90" width="560"></iframe></p>
 <p>week4</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/lObYwRDd4Ro" width="560"></iframe></p>
 <p>week 7</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/eC1SUyP3b2Q" width="560"></iframe></p>
-<p>week12</p>
+<p>week11</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/TaoQhydVuPo" width="560"></iframe></p>
+<p>week12</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jE6L9Wpjmp4" width="560"></iframe></p>
+<p>week13</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/vRnkkEYdR2U" width="560"></iframe></p>
