@@ -1233,12 +1233,152 @@ command.1.$(file.patterns.py)=python -c "import py_compile; py_compile.compile(r
 <p>使用瀏覽器在網址打<a href="https://127.0.0.1:8443/alogin">https://127.0.0.1:8443/alogin</a></p>
 <p>成功畫面</p>
 <p><img alt="" height="726" src="/images/login.jpg" width="1291"/></p>
-<p></p><h1>小組直播討論</h1>
+<h2>week 14</h2>
+<p>------------------------------------------------</p>
+<p>影片操作;</p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="314" src="http://www.youtube.com/embed/59KYtTBd9X4" width="560"></iframe></p>
+<p>先變更網路介面卡iPV6設定</p>
+<p>進入:</p>
+<p><a href="https://github.com/mdecourse/cd2020/blob/master/downloads/w13_ipv6_assignment.txt">https://github.com/mdecourse/cd2020/blob/master/downloads/w13_ipv6_assignment.txt</a> </p>
+<p>複製老師給的格式</p>
+<p><img caption="false" height="720" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20120436.jpg" width="1280"/></p>
+<p>點選內容</p>
+<p><img alt="" height="515" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20120544.jpg" width="626"/></p>
+<table class="highlight tab-size js-file-line-container" data-paste-markdown-skip="" data-tab-size="8">
+<tbody>
+<tr>
+<td class="blob-code blob-code-inner js-file-line" id="LC3">2001:288:6004:17 為機械設計系網段</td>
+</tr>
+<tr>
+<td class="blob-num js-line-number" data-line-number="4" id="L4"></td>
+<td class="blob-code blob-code-inner js-file-line" id="LC4">2020 為年份</td>
+</tr>
+<tr>
+<td class="blob-num js-line-number" data-line-number="5" id="L5"></td>
+<td class="blob-code blob-code-inner js-file-line" id="LC5">1 為 cda, 2 為 cdb, 3 為 wcm, 4 為 wcmj</td>
+</tr>
+<tr>
+<td class="blob-num js-line-number" data-line-number="6" id="L6"></td>
+<td class="blob-code blob-code-inner js-file-line" id="LC6">71 為 407231 表示甲班, 72 為乙班</td>
+</tr>
+<tr>
+<td class="blob-num js-line-number" data-line-number="7" id="L7"></td>
+<td class="blob-code blob-code-inner js-file-line" id="LC7">01 則為該班學號</td>
+</tr>
+</tbody>
+</table>
+<p>將IPv6位址設定為對應自己的學號</p>
+<p>-----------------------------------------------</p>
+<p>開啟Virtual Box 進入網路設定</p>
+<p><img alt="" height="551" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20121507.jpg" width="926"/></p>
+<p>Guest IP是在 Ubuntu的終端機中使用ifconfig查出來的</p>
+<p>進入Ubuntu</p>
+<p>輸入</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_112833">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">ifconfig</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>查出Inet6的位址</p>
+<p><img alt="" height="547" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20121831.jpg" width="640"/></p>
+<p>將inet6的位址輸入到剛剛講的Virtual Box的網路設定</p>
+<p><img alt="" height="675" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20123302.jpg" width="1231"/></p>
+<p>接著輸入</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_396244">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">cd /home/kmol2020/tmp/cd2020pj1/docs/cmsimde</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>進入到此資料夾</p>
+<p>輸入</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_103440">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">vi wsgi.py</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>更改host設定</p>
+<p>點擊 I鍵 編輯host 更改為查出來的Inet6位址</p>
+<p><img alt="" height="550" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20122428.jpg" width="640"/></p>
+<p>編輯完按ESC 並且輸入<span> </span><strong><em>:wq</em></strong><span> </span>儲存後退出</p>
+<p>輸入</p>
+<div>
+<div class="syntaxhighlighter html" id="highlighter_729826">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="html plain">python3 wsgi.py</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>開啟遠端</p>
+<p><img alt="" height="553" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20122654.jpg" width="638"/></p>
+<p>將此網址複製到Virtual Box 中的火狐瀏覽器 測試是否可開啟網頁</p>
+<p><img alt="" height="720" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20122804.jpg" width="1280"/></p>
+<p>如果內部可開啟代表成功</p>
+<p>接著到外部使用自己設定的host IP 網址</p>
+<p>看可不可以在外部開啟</p>
+<p><em><strong>注意! 要在外部開啟網站需要將proxy關閉</strong></em></p>
+<p>例如我是12號 所以我的網址就是:</p>
+<p><a href="https://[2001:288:6004:17:2020:1:0:7112]:19443"><span>https://[</span><span>2001:288:6004:17:2020:1::7112]:19443</span></a></p>
+<p><span>成功畫面</span></p>
+<p><img caption="false" height="720" src="http://mde.tw/cdaw14-2/images/Annotation%202020-06-03%20123050.jpg" width="1280"/></p><h1>小組直播討論</h1>
 <p>week3</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/c06esX1zO90" width="560"></iframe></p>
 <p>week4</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/lObYwRDd4Ro" width="560"></iframe></p>
 <p>week 7</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/eC1SUyP3b2Q" width="560"></iframe></p>
-<p>week12</p>
+<p>week11</p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/TaoQhydVuPo" width="560"></iframe></p>
+<p>week12</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/jE6L9Wpjmp4" width="560"></iframe></p>
+<p>week13</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/vRnkkEYdR2U" width="560"></iframe></p>
