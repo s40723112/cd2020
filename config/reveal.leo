@@ -21,8 +21,47 @@
 <v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11"><vh>快捷鍵</vh>
+<v t="leo.20180902120523.11"><vh>W1</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617101924.1"><vh>W2</vh>
+<v t="leo.20200617101924.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617102848.1"><vh>W3</vh>
+<v t="leo.20200617102848.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617110325.1"><vh>W4</vh>
+<v t="leo.20200617110325.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617110618.1"><vh>W6</vh>
+<v t="leo.20200617110618.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617111105.1"><vh>W7</vh>
+<v t="leo.20200617111105.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617111355.1"><vh>W8</vh>
+<v t="leo.20200617111355.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617111436.1"><vh>W9</vh>
+<v t="leo.20200617111436.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617111507.1"><vh>W10</vh>
+<v t="leo.20200617111507.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617111627.1"><vh>W11</vh>
+<v t="leo.20200617111627.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617111821.1"><vh>W12</vh>
+<v t="leo.20200617111821.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617112043.1"><vh>W13</vh>
+<v t="leo.20200617112043.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617112300.1"><vh>W14</vh>
+<v t="leo.20200617112300.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200617112518.1"><vh>W15</vh>
+<v t="leo.20200617112518.2"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
@@ -45,15 +84,15 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## CMSimfly1112 網際內容管理
+<t tx="leo.20180902120523.10">## 40723112 協同產品設計實習
 
-### KMOLab
 
-&lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
-&lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
+[倉儲位置](https://github.com/s40723112/cd2020)
+
+[個人網頁](https://s40723112.github.io/cd2020/content/index.html)
+
+[分組網頁](https://s40723110.github.io/cd2020ag3/content/index.html)
 
 
 </t>
@@ -66,14 +105,9 @@ Created by [KMOLab](http://lab.kmol.info/)
 
 						
 </t>
-<t tx="leo.20180902120523.12"># 投影片快捷鍵
+<t tx="leo.20180902120523.12"># W1
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+創建CD2020倉儲
 
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
@@ -345,5 +379,210 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="leo.20200617101924.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617101924.2"># W2
+## 將python更新至3.8.2
+&lt;small&gt;
+因本學期需要，所以要將python 更新為3.8.2版本
+安裝pip工具，
+並且安裝以下package:
+
+Flask
+
+Markdown
+
+lxml
+
+bs4
+
+flask_cors
+
+pelican
+
+leo
+
+
+</t>
+<t tx="leo.20200617102848.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617102848.2"># W3
+
+開始進行分組，同時進行分組任務
+
+
+</t>
+<t tx="leo.20200617110325.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617110325.2"># W4
+
+修復無法開啟LEO的問題
+
+有可能是LEO版本問題
+
+使用 pip install --upgrade leo 指令來更新LEO
+
+</t>
+<t tx="leo.20200617110618.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617110618.2"># W6
+
+進行OBS設定
+開始使用youtube進行直播
+
+翻譯:
+
+MechanicalDesignProcess.pdf 第二章節 Building the Design後半部(P27~P33)
+
+[連結](https://s40723112.github.io/cd2020/content/%E7%BF%BB%E8%AD%AF.html)</t>
+<t tx="leo.20200617111105.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617111105.2"># W7
+
+&lt;small&gt;
+直播測試
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2MjqRDfmt8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+翻譯:
+
+Machanical Design Process 3.1~3.3章節翻譯
+
+[連結](https://s40723112.github.io/cd2020/content/Week%207.html)</t>
+<t tx="leo.20200617111355.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617111355.2"># W8
+
+準備期中考</t>
+<t tx="leo.20200617111436.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617111436.2"># W9
+
+使用google meeting進行期中報告</t>
+<t tx="leo.20200617111507.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617111507.2"># W10
+
+設google API權限</t>
+<t tx="leo.20200617111627.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617111627.2"># W11
+
+下載[Virtualbox appliance of Ubuntu 20.04](https://drive.google.com/open?id=143jFMheM1xjLxhLkSAouThLzj3WUYX6_)
+並且將檔案匯入VirtualBox</t>
+<t tx="leo.20200617111821.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617111821.2"># W12
+
+設定虛擬主機網路設定，使Ubuntu可以透過學校proxy網路連線</t>
+<t tx="leo.20200617112043.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617112043.2"># W13
+
+設定VirtualBox可透過IPv4進行遠端連線，並且可在外部開啟。</t>
+<t tx="leo.20200617112300.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617112300.2"># W14
+
+可以在學校使用IPv6架設自己學號的Ipv6遠端網站，使分組組員可在遠端進行操作。
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/59KYtTBd9X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200617112518.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200617112518.2"># W15
+
+疑似解決外部無法開啟遠端網站的問題
+
+方法:在外部開啟網站因為proxy開著，會無法開啟遠端網站，此時不可將網站關閉，而是要將proxy關閉並且重新整理。</t>
 </tnodes>
 </leo_file>
