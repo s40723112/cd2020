@@ -506,6 +506,8 @@ Machanical Design Process 3.1~3.3章節翻譯
 </t>
 <t tx="leo.20200617111436.2"># W9
 
+期中考周
+
 使用google meeting進行期中報告</t>
 <t tx="leo.20200617111507.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -567,7 +569,8 @@ Machanical Design Process 3.1~3.3章節翻譯
 </t>
 <t tx="leo.20200617112300.2"># W14
 
-可以在學校使用IPv6架設自己學號的Ipv6遠端網站，使分組組員可在遠端進行操作。
+設定可以在學校架設自己學號的Ipv6遠端網站，
+使分組組員可在遠端進行操作。
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/59KYtTBd9X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617112518.1">&lt;section data-markdown&gt;
@@ -581,8 +584,11 @@ Machanical Design Process 3.1~3.3章節翻譯
 </t>
 <t tx="leo.20200617112518.2"># W15
 
-疑似解決外部無法開啟遠端網站的問題
+執行W14的操作，是否可再次開啟IPv6遠端
 
-方法:在外部開啟網站因為proxy開著，會無法開啟遠端網站，此時不可將網站關閉，而是要將proxy關閉並且重新整理。</t>
+
+&lt;font color="blue"&gt;疑似解決外部無法開啟遠端網站的問題
+
+&lt;font color="red"&gt;方法:在外部開啟網站因為proxy開著，會無法開啟遠端網站，此時不可將網站關閉，而是要將proxy關閉並且重新整理頁面。</t>
 </tnodes>
 </leo_file>
