@@ -84,6 +84,9 @@
 <v t="leo.20200617112518.1"><vh>W15</vh>
 <v t="leo.20200617112518.2"><vh>投影片快捷鍵</vh></v>
 </v>
+<v t="leo.20200624003932.1"><vh>小組直播討論</vh>
+<v t="leo.20200624003932.2"><vh>投影片快捷鍵</vh></v>
+</v>
 <v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.14"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
@@ -709,5 +712,17 @@ Machanical Design Process 3.1~3.3章節翻譯
 操作過程
 &lt;iframe src="https://s40723112.github.io/cd2020/content/week%204.html" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 </t>
+<t tx="leo.20200624003932.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624003932.2">小組直播討論
+
+&lt;iframe src="https://s40723112.github.io/cd2020/content/%E5%B0%8F%E7%B5%84%E7%9B%B4%E6%92%AD%E8%A8%8E%E8%AB%96.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
