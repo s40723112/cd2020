@@ -25,19 +25,40 @@
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20200617101924.1"><vh>W2</vh>
-<v t="leo.20200617101924.2"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20200623234535.1"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200623234701.1"><vh>W2</vh>
+<v t="leo.20200623234701.3"><vh>投影片快捷鍵</vh></v>
 </v>
 <v t="leo.20200617102848.1"><vh>W3</vh>
 <v t="leo.20200617102848.2"><vh>投影片快捷鍵</vh></v>
 </v>
-<v t="leo.20200617110325.1"><vh>W4</vh>
-<v t="leo.20200617110325.2"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20200624002743.1"><vh>W4</vh>
+<v t="leo.20200624002743.2"><vh>W4</vh>
+<v t="leo.20200624002743.3"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20200617110618.1"><vh>W6</vh>
-<v t="leo.20200617110618.2"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20200624002743.4"><vh>過程</vh>
+<v t="leo.20200624002743.5"><vh>引用程式碼</vh></v>
 </v>
-<v t="leo.20200617111105.1"><vh>W7</vh>
-<v t="leo.20200617111105.2"><vh>投影片快捷鍵</vh></v>
+</v>
+<v t="leo.20200624001955.1"><vh>W6</vh>
+<v t="leo.20200624001955.2"><vh>W6</vh>
+<v t="leo.20200624001955.3"><vh>LaTeX 格式方程式</vh></v>
+</v>
+<v t="leo.20200624001955.4"><vh>OBS</vh>
+<v t="leo.20200624001955.5"><vh>引用程式碼</vh></v>
+</v>
+<v t="leo.20200624001955.6"><vh>翻譯</vh>
+<v t="leo.20200624001955.7"><vh>iframe 導入影片</vh></v>
+</v>
+</v>
+<v t="leo.20200624002358.1"><vh>W7</vh>
+<v t="leo.20200624002358.2"><vh>W7</vh>
+<v t="leo.20200624002358.3"><vh>LaTeX 格式方程式</vh></v>
+</v>
+<v t="leo.20200624002358.4"><vh>翻譯</vh>
+<v t="leo.20200624002358.5"><vh>引用程式碼</vh></v>
+</v>
 </v>
 <v t="leo.20200617111355.1"><vh>W8</vh>
 <v t="leo.20200617111355.2"><vh>投影片快捷鍵</vh></v>
@@ -84,15 +105,14 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## 40723112 協同產品設計實習
+<t tx="leo.20180902120523.10">&lt;marquee direction=up&gt;40723112 協同產品設計實習&lt;/marquee&gt; &lt;br /&gt; &lt;marquee loop=10000000000&gt;&lt;/marquee&gt; &lt;br /&gt;   
+&lt;hr&gt;
 
+&lt;p align="left"&gt;[&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;倉儲位置](https://github.com/s40723112/cd2020)
 
+&lt;p align="left"&gt;[&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;個人網頁](https://s40723112.github.io/cd2020/content/index.html)
 
-[倉儲位置](https://github.com/s40723112/cd2020)
-
-[個人網頁](https://s40723112.github.io/cd2020/content/index.html)
-
-[分組網頁](https://s40723110.github.io/cd2020ag3/content/index.html)
+&lt;p align="left"&gt;[&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;分組網頁](https://s40723110.github.io/cd2020ag3/content/index.html)
 
 
 </t>
@@ -107,7 +127,9 @@
 </t>
 <t tx="leo.20180902120523.12"># W1
 
-創建CD2020倉儲
+創建CD2020倉儲並且建立網頁
+
+&lt;iframe src="https://s40723112.github.io/cd2020/content/index.html" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
@@ -388,29 +410,6 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200617101924.2"># W2
-## 將python更新至3.8.2
-&lt;small&gt;
-因本學期需要，所以要將python 更新為3.8.2版本
-安裝pip工具，
-並且安裝以下package:
-
-Flask
-
-Markdown
-
-lxml
-
-bs4
-
-flask_cors
-
-pelican
-
-leo
-
-
-</t>
 <t tx="leo.20200617102848.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -426,63 +425,6 @@ leo
 
 
 </t>
-<t tx="leo.20200617110325.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20200617110325.2"># W4
-
-修復無法開啟LEO的問題
-
-有可能是LEO版本問題
-
-使用 pip install --upgrade leo 指令來更新LEO
-
-</t>
-<t tx="leo.20200617110618.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20200617110618.2"># W6
-
-進行OBS設定
-開始使用youtube進行直播
-
-翻譯:
-
-MechanicalDesignProcess.pdf 第二章節 Building the Design後半部(P27~P33)
-
-[連結](https://s40723112.github.io/cd2020/content/%E7%BF%BB%E8%AD%AF.html)</t>
-<t tx="leo.20200617111105.1">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20200617111105.2"># W7
-
-&lt;small&gt;
-直播測試
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2MjqRDfmt8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-
-翻譯:
-
-Machanical Design Process 3.1~3.3章節翻譯
-
-[連結](https://s40723112.github.io/cd2020/content/Week%207.html)</t>
 <t tx="leo.20200617111355.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -519,8 +461,9 @@ Machanical Design Process 3.1~3.3章節翻譯
 						
 </t>
 <t tx="leo.20200617111507.2"># W10
+設google API權限
 
-設google API權限</t>
+&lt;iframe src="https://s40723112.github.io/cd2020/content/week%2010.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617111627.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -544,8 +487,9 @@ Machanical Design Process 3.1~3.3章節翻譯
 						
 </t>
 <t tx="leo.20200617111821.2"># W12
-
-設定虛擬主機網路設定，使Ubuntu可以透過學校proxy網路連線</t>
+&lt;small&gt;
+設定虛擬主機網路設定，使Ubuntu可以透過學校proxy網路連線
+&lt;iframe src="https://s40723112.github.io/cd2020/content/week%2012.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617112043.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -556,8 +500,9 @@ Machanical Design Process 3.1~3.3章節翻譯
 						
 </t>
 <t tx="leo.20200617112043.2"># W13
-
-設定VirtualBox可透過IPv4進行遠端連線，並且可在外部開啟。</t>
+&lt;small&gt;
+設定VirtualBox可透過IPv4進行遠端連線，並且可在外部開啟。
+&lt;iframe src="https://s40723112.github.io/cd2020/content/week%2013.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617112300.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -568,11 +513,13 @@ Machanical Design Process 3.1~3.3章節翻譯
 						
 </t>
 <t tx="leo.20200617112300.2"># W14
-
+&lt;small&gt;
 設定可以在學校架設自己學號的Ipv6遠端網站，
 使分組組員可在遠端進行操作。
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/59KYtTBd9X4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+&lt;iframe src="https://s40723112.github.io/cd2020/content/week%2014.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+</t>
 <t tx="leo.20200617112518.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
@@ -584,11 +531,183 @@ Machanical Design Process 3.1~3.3章節翻譯
 </t>
 <t tx="leo.20200617112518.2"># W15
 
-執行W14的操作，是否可再次開啟IPv6遠端
-
+執行W14的操作，確認是否可再次開啟IPv6遠端
 
 &lt;font color="blue"&gt;疑似解決外部無法開啟遠端網站的問題
 
 &lt;font color="red"&gt;方法:在外部開啟網站因為proxy開著，會無法開啟遠端網站，此時不可將網站關閉，而是要將proxy關閉並且重新整理頁面。</t>
+<t tx="leo.20200623234535.1"># W2
+## 將python更新至3.8.2
+&lt;small&gt;
+因本學期需要，所以要將python 更新為3.8.2版本
+安裝pip工具，
+並且安裝以下package:
+
+Flask
+
+Markdown
+
+lxml
+
+bs4
+
+flask_cors
+
+pelican
+
+leo
+
+
+</t>
+<t tx="leo.20200623234701.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200623234701.3"># W2
+更新過程
+
+&lt;iframe src="https://s40723112.github.io/cd2020/content/week%202.html" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+</t>
+<t tx="leo.20200624001955.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200624001955.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624001955.3"># W6
+
+進行OBS設定
+開始使用youtube進行直播
+
+翻譯:
+
+MechanicalDesignProcess.pdf 第二章節 Building the Design後半部(P27~P33)
+
+[連結](https://s40723112.github.io/cd2020/content/%E7%BF%BB%E8%AD%AF.html)
+</t>
+<t tx="leo.20200624001955.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624001955.5">OBS 設定
+
+&lt;iframe src="https://s40723112.github.io/cd2020/content/OBS.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200624001955.6">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200624001955.7">
+翻譯
+
+&lt;iframe src="https://s40723112.github.io/cd2020/content/%E7%BF%BB%E8%AD%AF.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
+<t tx="leo.20200624002358.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200624002358.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624002358.3"># W7
+
+&lt;small&gt;
+直播測試
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2MjqRDfmt8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+翻譯:
+
+Machanical Design Process 3.1~3.3章節翻譯
+
+[連結](https://s40723112.github.io/cd2020/content/Week%207.html)</t>
+<t tx="leo.20200624002358.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624002358.5">翻譯
+&lt;iframe src="https://s40723112.github.io/cd2020/content/Week%207.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200624002743.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200624002743.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624002743.3"># W4
+
+修復無法開啟LEO的問題
+
+有可能是LEO版本問題
+
+將LEO更新為 6.2.1 版本
+
+</t>
+<t tx="leo.20200624002743.4">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200624002743.5">
+操作過程
+&lt;iframe src="https://s40723112.github.io/cd2020/content/week%204.html" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</t>
 </tnodes>
 </leo_file>
