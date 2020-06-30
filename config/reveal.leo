@@ -21,6 +21,9 @@
 <v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20200630212711.1"><vh>W1~W9</vh>
+<v t="leo.20200630212711.2"><vh>投影片快捷鍵</vh></v>
+</v>
 <v t="leo.20180902120523.11"><vh>W1</vh>
 <v t="leo.20180902120523.12"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -66,6 +69,9 @@
 <v t="leo.20200617111436.1"><vh>W9</vh>
 <v t="leo.20200617111436.2"><vh>投影片快捷鍵</vh></v>
 </v>
+<v t="leo.20200630213416.1"><vh>W10~18</vh>
+<v t="leo.20200630213416.2"><vh>投影片快捷鍵</vh></v>
+</v>
 <v t="leo.20200617111507.1"><vh>W10</vh>
 <v t="leo.20200617111507.2"><vh>投影片快捷鍵</vh></v>
 </v>
@@ -108,7 +114,7 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">&lt;marquee direction=up&gt;40723112 協同產品設計實習&lt;/marquee&gt; &lt;br /&gt; &lt;marquee loop=10000000000&gt;&lt;/marquee&gt; &lt;br /&gt;   
+<t tx="leo.20180902120523.10">&lt;marquee direction=up&gt;40723112 協同產品設計實習&lt;/marquee&gt; &lt;br /&gt; &lt;marquee loop=10000000000000000000000000000000000000000000&gt;&lt;/marquee&gt; &lt;br /&gt;   
 &lt;hr&gt;
 
 &lt;p align="left"&gt;[&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;倉儲位置](https://github.com/s40723112/cd2020)
@@ -464,7 +470,7 @@ vertical: body pane on the botton</t>
 						
 </t>
 <t tx="leo.20200617111507.2"># W10
-設google API權限
+設定google API權限
 
 &lt;iframe src="https://s40723112.github.io/cd2020/content/week%2010.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200617111627.1">&lt;section data-markdown&gt;
@@ -517,7 +523,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200617112300.2"># W14
 &lt;small&gt;
-設定可以在學校架設自己學號的Ipv6遠端網站，
+設定自己學號的Ipv6遠端網站，
 使分組組員可在遠端進行操作。
 
 &lt;iframe src="https://s40723112.github.io/cd2020/content/week%2014.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
@@ -534,11 +540,7 @@ vertical: body pane on the botton</t>
 </t>
 <t tx="leo.20200617112518.2"># W15
 
-執行W14的操作，確認是否可再次開啟IPv6遠端
-
-&lt;font color="blue"&gt;疑似解決外部無法開啟遠端網站的問題
-
-&lt;font color="red"&gt;方法:在外部開啟網站因為proxy開著，會無法開啟遠端網站，此時不可將網站關閉，而是要將proxy關閉並且重新整理頁面。</t>
+執行W14的操作，確認是否可再次開啟IPv6遠端</t>
 <t tx="leo.20200623234535.1"># W2
 ## 將python更新至3.8.2
 &lt;small&gt;
@@ -724,5 +726,33 @@ Machanical Design Process 3.1~3.3章節翻譯
 <t tx="leo.20200624003932.2">小組直播討論
 
 &lt;iframe src="https://s40723112.github.io/cd2020/content/%E5%B0%8F%E7%B5%84%E7%9B%B4%E6%92%AD%E8%A8%8E%E8%AB%96.html" width="1280" height="470" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200630212711.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200630212711.2"># Week1~9
+* 更新python3.8.2
+* OBS設定YOUTUBE串流直播
+* 原文書章節翻譯
+</t>
+<t tx="leo.20200630213416.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20200630213416.2"># Week10~18
+* 設定Google API 權限
+* Virtualbox 學校proxy網路設定
+* 近端與遠端網路架設
+* Ipv4與Ipv6 個人網頁架設</t>
 </tnodes>
 </leo_file>
